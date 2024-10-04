@@ -1,0 +1,2313 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <script type="text/javascript" src="https://dev.connectedu.com/lib/dev/js/jquery.js"></script>
+  <script
+    type="text/javascript">window.PBVAR = { "home_url": "https:\/\/dev.connectedu.com\/", "locale_domain": "pbpress", "ajax_url": "https:\/\/dev.connectedu.com\/ajax", "fileupload_url": "https:\/\/dev.connectedu.com\/fileupload", "filebase_url": "https:\/\/s3.ap-northeast-2.amazonaws.com\/cdn.supremestudyabroadtool.com", "theme_domain": "connectedu", "is_user_logged_in": false, "user_login_url": "https:\/\/dev.connectedu.com\/login" };</script>
+  <script type="text/javascript" src="https://dev.connectedu.com/lib/dev/comp-lib/all-main.js"></script>
+  <script type="text/javascript" src="https://dev.connectedu.com/_pblang.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://dev.connectedu.com/_page_builder_compiled.css">
+  <link rel="stylesheet" type="text/css" href="https://dev.connectedu.com/lib/dev/css/page-builder/common.css?v=2">
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvHXb0hXEJwqfcSQlM7KMxqzrxCmazlPM&libraries=geometry,places"
+    defer></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link rel="apple-touch-icon" sizes="57x57"
+    href="https://dev.connectedu.com/themes/connected/img/icon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60"
+    href="https://dev.connectedu.com/themes/connected/img/icon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72"
+    href="https://dev.connectedu.com/themes/connected/img/icon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76"
+    href="https://dev.connectedu.com/themes/connected/img/icon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114"
+    href="https://dev.connectedu.com/themes/connected/img/icon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120"
+    href="https://dev.connectedu.com/themes/connected/img/icon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144"
+    href="https://dev.connectedu.com/themes/connected/img/icon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152"
+    href="https://dev.connectedu.com/themes/connected/img/icon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180"
+    href="https://dev.connectedu.com/themes/connected/img/icon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"
+    href="https://dev.connectedu.com/themes/connected/img/icon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32"
+    href="https://dev.connectedu.com/themes/connected/img/icon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96"
+    href="https://dev.connectedu.com/themes/connected/img/icon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16"
+    href="https://dev.connectedu.com/themes/connected/img/icon/favicon-16x16.png">
+  <link rel="stylesheet" type="text/css"
+    href="https://dev.connectedu.com/themes/connected/lib/dev/css/pb-main.css?v=1.0.0_debug_1Sabk">
+  <script type="text/javascript"
+    src="https://dev.connectedu.com/themes/connected/lib/dev/comp-lib/all.js?v=1.0.0_debug_1Sabk"></script>
+  <script type="text/javascript" src="https://dev.connectedu.com/themes/connected/lib/dev/js/pb-dev.js"></script>
+  <title>커넥티드</title>
+  <!-- jQuery CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <!-- DateTimePicker -->
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <!-- Star -->
+  <link rel="stylesheet" href="../js/star/star-rating-svg.css">
+  <script src="../js/star/jquery.star-rating-svg.js"></script>
+  <!-- smooth scroll -->
+  <link rel="stylesheet" href="https://unpkg.com/smooth-scrollbar@latest/dist/smooth-scrollbar.css">
+  <script src="https://unpkg.com/smooth-scrollbar@latest/dist/smooth-scrollbar.js"></script>
+  <!-- NiceSelect -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+  <!-- Custom CSS & JS -->
+  <link rel="stylesheet" href="/css/common2.css">
+  <script src="/js/common2.js" defer></script>
+  <meta name="title" content="커넥티드">
+  <meta name="keywords" content="">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="Korean">
+  <!-- Search Engine -->
+  <meta name="description" content="커넥티드">
+  <meta name="image" content="https://dev.connectedu.com/themes/connected/img/og.jpg">
+  <!-- Schema.org for Google -->
+  <meta itemprop="name" content="커넥티드">
+  <meta itemprop="description" content="커넥티드">
+
+  <meta itemprop="image" content="https://dev.connectedu.com/themes/connected/img/og.jpg">
+  <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+  <meta property="og:title" content="커넥티드">
+  <meta property="og:description" content="커넥티드">
+  <meta property="og:locale" content="ko_KR">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://www.connectedu.com/themes/connected/img/og_new.png">
+  <meta property="og:url" content="https://dev.connectedu.com/">
+  <meta property="og:site_name" content="커넥티드">
+  <meta name="facebook-domain-verification" content="ceg8hozu78orpcw7kul1sdm6812f9u" />
+</head>
+
+<body class="" oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+  <div id="wrap" class="no_header">
+    <header>
+      <div class="band-banner">
+        <div class="banner" style="background-color: #0A0A0A;">
+          <div class="banner_box">
+            <img src="/img/band_banner_img.png" alt="띠 배너 이미지">
+            <button type="button" class="btn_close"></button>
+          </div>
+        </div>
+        <!-- <div class="banner" style="background-color: #0A0A0A;">
+			          <div class="banner_box">
+			            <img src="/img/band_banner_img.png" alt="띠 배너 이미지">
+			            <button type="button" class="btn_close"></button>
+			          </div>
+			        </div> -->
+      </div>
+      <div class="header__inner">
+        <div class="hd__top">
+          <div class="hd-search">
+            <a href="/" class="logo">
+              <img src="../img/common/logo.svg" alt="커넥티드 로고">
+            </a>
+            <form action="" class="form_hd-search">
+              <fieldset>
+                <div class="search">
+                  <input type="text" placeholder="검색어를 입력하세요.">
+                  <button type="button" class="btn_search"></button>
+                </div>
+              </fieldset>
+            </form>
+            <button type="button" class="mo-icon_menu"></button>
+          </div>
+          <div class="hd-language">
+            <ul class="hd-navigation">
+              <li>
+                <div class="setting-lang">
+                  <span class="current">KOR</span>
+                  <button type="button" class="btn_open"></button>
+                  <ul class="lang_list">
+                    <li>KOR</li>
+                    <li>ENG</li>
+                    <li>CN</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="hd__bottom">
+          <div class="hd_category_gnb">
+            <div class="category">
+              <div class="category_icon">
+                <span></span><span></span><span></span><span></span>
+                <span></span><span></span><span></span><span></span><span></span>
+              </div>
+              <p>전체 카테고리</p>
+              <button type="button" class="btn_open"></button>
+            </div>
+            <nav id="gnb">
+              <ul>
+                <!-- 해당 메뉴 접근시 li에 active 클래스 추가 -->
+                <li><a href="./school/school_home.html">학교</a></li>
+                <li><a href="./school/online_home.html">온라인학교</a></li>
+                <li><a href="./activity/short_home.html">단기활동</a></li>
+                <li><a href="./activity/online_home.html">온라인 단기활동</a></li>
+                <li><a href="./magazine/list.html">매거진</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="hd_login">
+            <!-- 비로그인 환경 -->
+            <!-- <a href="/login.html" class="btn_login">로그인</a>
+			                <a href="#" class="btn-smType btn-round btn_signup">회원가입</a> -->
+            <!-- 로그인 환경 -->
+            <div class="hd_mypage">
+              <button type="button" class="btn-smType btn-round btn_mypage">마이페이지</button>
+              <ul class="mypage_list">
+                <li><a href="#" class="my_info">계정 정보</a></li>
+                <li><a href="#" class="my_noti">알림</a></li>
+                <li><a href="#" class="my_like">관심리스트</a></li>
+                <li><a href="#" class="my_portfolio">포트폴리오</a></li>
+                <li><a href="#" class="my_payment">결제내역</a></li>
+                <li><a href="#" class="my_aplc">지원서 리스트</a></li>
+                <li><a href="#" class="logout">로그아웃</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 전체 카테고리 -->
+      <div id="hd_category">
+        <div class="category__inner">
+          <ul class="category">
+            <li>
+              <span class="category_nm">학교</span>
+              <ul class="category_sub">
+                <li>
+                  <a href="#" class="category_nm">미국</a>
+                  <ul class="category_sub">
+                    <li><a href="#" class="category_nm">미국</a></li>
+                    <li><a href="#" class="category_nm">영국</a></li>
+                    <li><a href="#" class="category_nm">캐나다</a></li>
+                  </ul>
+                </li>
+                <li><a href="#" class="category_nm">영국</a></li>
+                <li><a href="#" class="category_nm">캐나다</a></li>
+              </ul>
+            </li>
+            <li><span class="category_nm">온라인학교</span>
+              <ul class="category_sub">
+                <li>
+                  <a href="#" class="category_nm">미국1</a>
+                  <ul class="category_sub">
+                    <li><a href="#" class="category_nm">미국</a></li>
+                    <li><a href="#" class="category_nm">영국</a></li>
+                    <li><a href="#" class="category_nm">캐나다</a></li>
+                  </ul>
+                </li>
+                <li><a href="#" class="category_nm">영국</a></li>
+                <li><a href="#" class="category_nm">캐나다</a></li>
+              </ul>
+            </li>
+            <li><span class="category_nm">단기활동</span>
+              <ul class="category_sub">
+                <li>
+                  <a href="#" class="category_nm">미국2</a>
+                  <ul class="category_sub">
+                    <li><a href="#" class="category_nm">미국</a></li>
+                    <li><a href="#" class="category_nm">영국</a></li>
+                    <li><a href="#" class="category_nm">캐나다</a></li>
+                  </ul>
+                </li>
+                <li><a href="#" class="category_nm">영국</a></li>
+                <li><a href="#" class="category_nm">캐나다</a></li>
+              </ul>
+            </li>
+            <li><span class="category_nm">온라인 단기활동</span></li>
+            <li><span class="category_nm">매거진</span></li>
+          </ul>
+        </div>
+      </div>
+      <!-- 모바일 햄버거 버튼 클릭 메뉴 -->
+      <div class="mobile_gnb">
+        <div class="mobile_gnb__inner">
+          <div class="mobile_gnb__header">
+            <div class="logo">
+              <img src="./img/common/logo.svg" alt="로고">
+            </div>
+            <button type="button" class="btn_close"></button>
+          </div>
+          <div class="mobile_gnb__content">
+            <!-- 로그인 전 로그인 유도 -->
+            <div class="m_gnb-login">
+              <span>
+                로그인 하시고<br>
+                더 자세한 정보를 확인하세요!
+              </span>
+              <a href="/login.html" class="btn_login">로그인</a>
+            </div>
+            <ul class="m-gnb">
+              <!-- 로그인 후 마이페이지 노출 -->
+              <li>
+                <button type="button" class="a_menu mypage">마이페이지</button>
+              </li>
+              <li>
+                <a href="./school/school_home.html" class="a_menu">학교</a>
+              </li>
+              <li>
+                <a href="./school/online_home.html" class="a_menu">온라인학교</a>
+              </li>
+              <li>
+                <a href="./activity/short_home.html" class="a_menu">단기활동</a>
+              </li>
+              <li>
+                <a href="./activity/online_home.html" class="a_menu">온라인 단기활동</a>
+              </li>
+              <li>
+                <a href="./magazine/list.html" class="a_menu">매거진</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mobile_gnb__mypage">
+            <div class="gnb_mypage__inner">
+              <button type="button" class="btn_revert">전체</button>
+              <ul class="mypage__menu">
+                <li><a href="#" class="my_info">계정 정보</a></li>
+                <li><a href="#" class="my_noti">알림</a></li>
+                <li><a href="#" class="my_like">관심리스트</a></li>
+                <li><a href="#" class="my_portfolio">포트폴리오</a></li>
+                <li><a href="#" class="my_payment">결제내역</a></li>
+                <li><a href="#" class="my_aplc">지원서 리스트</a></li>
+                <li><a href="#" class="logout">로그아웃</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="mobile__header fix">
+      <button type="button" class="btn_back"></button>
+      <h3 class="title"></h3>
+      <div class="mobile_header-btns">
+        <button type="button" class="btn_home"></button>
+      </div>
+    </div>
+    <script type="text/javascript">
+      jQuery(document).ready(function ($) {
+        $("#pb-header-search-group").pb_header_search_group();
+      });
+    </script>
+
+
+    <div class="main-body-frame">
+      <style type="text/css">
+        .pb-element-class-gby0akmpn3 {
+          padding-top: 0 !important;
+          padding-bottom: 0 !important;
+        }
+
+        .pb-element-class-dasl573pim {
+          margin-top: 0 !important;
+          margin-bottom: 0 !important;
+          padding-top: 30 !important;
+          padding-bottom: 30 !important;
+        }
+
+        .pb-element-class-xx5nr8tfpy {
+          margin-top: 0 !important;
+          margin-bottom: 0 !important;
+          padding-top: 30 !important;
+          padding-bottom: 30 !important;
+        }
+
+        .pb-element-class-1rnaypzik4 {
+          margin-top: 0 !important;
+          margin-bottom: 0 !important;
+          padding-top: 30 !important;
+          padding-bottom: 30 !important;
+        }
+
+        .pb-element-class-zrdhefohlj {
+          padding-top: 0 !important;
+          padding-bottom: 0 !important;
+        }
+
+        .pb-element-class-w9g37jgtyu {
+          margin-top: 0 !important;
+          margin-bottom: 0 !important;
+          padding-top: 0 !important;
+          padding-bottom: 0 !important;
+          background-color: #2b3db0;
+        }
+
+        .pb-element-class-1ytpr5quyz {
+          padding-top: 0 !important;
+          padding-bottom: 0 !important;
+        }
+
+        .pb-element-class-z6nk24i2s8 {
+          padding-top: 0 !important;
+          padding-bottom: 0 !important;
+        }
+
+        .pb-element-class-okkdik98mr {
+          padding-top: 0 !important;
+          padding-bottom: 0 !important;
+        }
+
+        .pb-element-class-hph31i4e0m {
+          padding-top: 0 !important;
+          padding-bottom: 0 !important;
+          background-color: #fffce2;
+        }
+      </style>
+    </div>
+
+    <main>
+      <div class="container">
+        <div class="detail__inner">
+          <!-- 상단 정보 -->
+          <div class="pj_info">
+            <div class="thum">
+              <div class="swiper dtl-thum__swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="img__inner">
+                      <img src="./img/pj_dtl_img.png" alt="상세페이지 썸네일">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="img__inner">
+                      <img src="./img/pj_dtl_img.png" alt="상세페이지 썸네일">
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="img__inner">
+                      <img src="./img/pj_dtl_img.png" alt="상세페이지 썸네일">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-pagination"></div>
+              </div>
+              <span class="official" onclick="openModal('modal-login')">커넥티드 공식 파트너 교육기관입니다.</span>
+            </div>
+            <div class="info">
+              <div class="icon">
+                <div class="view_cnt">
+                  <em id="current_viewing" class="viewing">현재 <b>56</b>명이 이 학교를 보고있어요</em>
+                  <span>1,219</span>
+                </div>
+                <div class="icon_right">
+                  <!-- 좋아요 버튼 -->
+                  <div class="btn_like_box">
+                    <input type="checkbox" id="btn_like" checked />
+                    <label for="btn_like">
+                      <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+                        <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                          <path
+                            d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                            stroke="#ddd" stroke-width="2" id="heart" fill="transparent" />
+                          <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+                        </g>
+                      </svg>
+                    </label>
+                    24
+                    <div class="btn_like_hover">
+                      <span>관심리스트 추가</span>
+                    </div>
+                  </div>
+                  <button type="button" class="btn_share" onclick="openModal('modal-share-school')">공유</button>
+                </div>
+              </div>
+              <h3 id="pj_title" class="title">Phillips Exeter Academy</h3>
+              <ul class="info_list">
+                <li>미국/ 뉴 햄프셔/ Exeter</li>
+                <li>9~12학년</li>
+                <li>통학/기숙학교</li>
+                <li>남여공학</li>
+              </ul>
+              <p class="enable">
+                Sixth form은 남자만 지원할 수 있어요!
+              </p>
+              <div class="score">
+                <div class="common_star">
+                  <span class="fill"></span>
+                  <span class="fill"></span>
+                  <span class="fill"></span>
+                  <span class="half"></span>
+                  <span></span>
+                </div>
+                <em>(5.0)</em>
+                <a href="#" class="btn_review">리뷰 1,200건</a>
+              </div>
+              <div class="claim">
+                정보에 문제가 있나요?<a href="#" class="btn_claim">Claim your School</a>
+              </div>
+              <ul class="school_introduce">
+                <li>
+                  <span class="icon"></span>
+                  <div class="txt">
+                    <p>미국 명문보딩스쿨</p>
+                    <p>미국에서 TOP 100이내 명문보딩스쿨</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="icon"></span>
+                  <div class="txt">
+                    <p>미국 명문보딩스쿨</p>
+                    <p>미국에서 TOP 100이내 명문보딩스쿨</p>
+                  </div>
+                </li>
+                <li>
+                  <span class="icon"></span>
+                  <div class="txt">
+                    <p>미국 명문보딩스쿨</p>
+                    <p>미국에서 TOP 100이내 명문보딩스쿨</p>
+                  </div>
+                </li>
+              </ul>
+              <div class="evaluation">
+                <h5>기관평가</h5>
+                <div class="evaluation_score">
+                  <b>A+</b>
+                  <span>기관평가는 학업, 교사, 치안, 시설, 위치 등
+                    여러 항목을 고려하여 결정됩니다.</span>
+                </div>
+                <a href="#" class="btn_grade-show">커넥티드 Grade 산정방법 보러가기</a>
+              </div>
+            </div>
+          </div>
+          <!-- 하단 탭 & 지원서 작성 -->
+          <div class="pj_detailed">
+            <div class="pj_detailed_tabs">
+              <ul class="custom-tabs">
+                <li class="custom-tabs_li on" data-tab="menu1">학교 소개</li>
+                <li class="custom-tabs_li" data-tab="menu2">스케줄</li>
+                <li class="custom-tabs_li" data-tab="menu3">지원 정보</li>
+                <li class="custom-tabs_li" data-tab="menu4">리뷰<br class="mobile_show"> (1,200)</li>
+                <li class="custom-tabs_li" data-tab="menu5">문의하기<br class="mobile_show"> (1,200)</li>
+              </ul>
+              <!-- 학교 소개 -->
+              <div id="menu1" class="custom-tab_contents on">
+                <div class="introduce_school">
+                  <div class="main_info program">
+                    <h3>📌 프로그램 개요</h3>
+                    <ul>
+                      <li>
+                        <p class="tit">주최기관</p>
+                        <p class="txt">주최기관명</p>
+                      </li>
+                      <li>
+                        <p class="tit">참가대상</p>
+                        <p class="txt">1학년 ~ 4학년</p>
+                      </li>
+                      <li>
+                        <p class="tit">지원기간</p>
+                        <p class="txt">2024.01.10 ~ 2024.01.20</p>
+                      </li>
+                      <li>
+                        <p class="tit">등록기간</p>
+                        <p class="txt">최소 10일부터 최대 50일</p>
+                      </li>
+                      <li>
+                        <p class="tit">Live 수업 비율</p>
+                        <p class="txt">80%</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="introduce_video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/LqME1y6Mlyg?si=h8g4s-t2eWOir0mJ"
+                      title="YouTube video player" frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowfullscreen></iframe>
+                  </div>
+                  <div class="appli_process">
+                    <h3>프로그램 정보</h3>
+                    <div class="dtl_table">
+                      <table>
+                        <colgroup>
+                          <col style="width: 55%;">
+                          <col style="width: 30%;">
+                          <col style="width: 15%;">
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th>프로그램 명</th>
+                            <th>진행기간</th>
+                            <th>진행타입</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>ESL Credit Program</td>
+                            <td>2024.01.01 ~ 2024.01.01</td>
+                            <td>온라인</td>
+                          </tr>
+                          <tr>
+                            <td>2024 여름 발리 글로벌 영어캠프 (2주 프로그램)</td>
+                            <td>2024.01.01 ~ 2024.01.01</td>
+                            <td>온라인</td>
+                          </tr>
+                          <tr>
+                            <td>ESL Credit Program</td>
+                            <td>2024.01.01 ~ 2024.01.01</td>
+                            <td>온라인</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                  <div class="appli_process">
+                    <h3>수업시작 시간</h3>
+                    <div class="cnts">
+                      <div class="start_lecture">
+                        <h1>10:00 AM</h1>
+                        <p>접속한 위치와의 시차 : +8H / 18:00 PM</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="appli_process">
+                    <h3>액티비티 소개</h3>
+                    <div class="cnts">
+                      <p>
+                        의견 내용 관리자 입력 텍스트 게시판 에디터 적용, 자율 텍스트 결과값
+                      </p>
+                    </div>
+                  </div>
+                  <div class="appli_process">
+                    <h3>커리큘럼</h3>
+                    <div class="img_area">
+                      <img src="./img/detail/img_sample.png" alt="">
+                    </div>
+                  </div>
+                  <div class="school_cost">
+                    <div class="title">
+                      <h3>비용정보</h3>
+                    </div>
+                    <div class="dtl_table">
+                      <table>
+                        <colgroup>
+                          <col style="width: 80%;">
+                          <col style="width: 20%;">
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th>구분</th>
+                            <th>비용</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>참가비용 (숙소불포함)</td>
+                            <td>USD-$100 ~</td>
+                          </tr>
+                          <tr>
+                            <td>참가비용 (숙소 포함)</td>
+                            <td>USD-$100 ~</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="scholarship_info">
+                      <p><b>기타비용 :</b> 상세내용</p>
+                    </div>
+                    <ul class="cost">
+                      <li>
+                        <div class="tit">
+                          예약금
+                        </div>
+                        <p class="cnts">USD-$100</p>
+                      </li>
+                      <li>
+                        <div class="tit">
+                          지원료
+                        </div>
+                        <p class="cnts">USD-$100</p>
+                      </li>
+                      <li>
+                        <div class="tit">
+                          교재/교구비
+                        </div>
+                        <p class="cnts">USD-$100</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="appli_process">
+                    <h3>전문가 의견</h3>
+                    <div class="cnts">
+                      <p>
+                        의견 내용 관리자 입력 텍스트 게시판 에디터 적용, 자율 텍스트 결과값
+                      </p>
+                    </div>
+                  </div>
+                  <div class="school_contact">
+                    <div class="school_facility">
+                      <h4>포함내역</h4>
+                      <p>
+                        포함내역 텍스트 정보 내용
+                      </p>
+                    </div>
+                    <div class="school_facility mt24">
+                      <h4>불포함내역</h4>
+                      <p>
+                        불포함내역 텍스트 정보 내용
+                      </p>
+                    </div>
+                    <div class="school_facility mt24">
+                      <h4>환불규정</h4>
+                      <p>
+                        환불규정 텍스트 정보 내용
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 학업정보 -->
+              <div id="menu2" class="custom-tab_contents">
+                <div class="schedule_info">
+                  <h3>일정 안내</h3>
+                  <div class="img_area">
+                    <img src="./img/detail/img_sample.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <!-- 지원 정보 -->
+              <div id="menu3" class="custom-tab_contents">
+                <!-- 로그인 전 -->
+                <!-- <div class="school_login">
+									<div class="school-login__inner">
+										<div class="login__header">
+											<h3><b>로그인/회원가입</b> 하시고<br>
+												더 많은 정보를 확인해 보세요!</h3>
+										</div>
+										<div class="login__sns">
+											<p class="tit-space">SNS로 로그인하기</p>
+											<ul class="sns_list">
+												<li><a href="#" class="login_kakao"></a></li>
+												<li><a href="#" class="login_naver"></a></li>
+												<li><a href="#" class="login_facebook"></a></li>
+											</ul>
+										</div>
+										<div class="login__email">
+											<p class="tit-space">이메일로 로그인하기</p>
+											<form action="" class="form_login">
+												<fieldset>
+													<div class="input">
+														<input type="text" placeholder="이메일주소를 입력해주세요">
+														<p class="err-text active">이메일 형식이 올바르지 않습니다.</p>
+													</div>
+													<div class="input">
+														<div class="input_password">
+															<input type="password" placeholder="비밀번호를 입력해주세요">
+															<button type="button" class="btn_eye hide"></button>
+														</div>
+														<p class="err-text">비밀번호를 입력해주세요.</p>
+													</div>
+													<div class="find-pw">
+														<button type="button" class="btn-textType" onclick="openModal('modal-find-pw')">비밀번호
+															찾기</button>
+													</div>
+													<button type="button" class="btn-bigType btn_login">로그인</button>
+												</fieldset>
+											</form>
+											<div class="suggest_signup">
+												<p>아직 커넥티드 계정이 없으신가요? <a href="#" class="btn-textType btn_signup">계정 만들기</a></p>
+											</div>
+										</div>
+									</div>
+								</div> -->
+                <div class="dtl-support_info">
+                  <div class="support_info">
+                    <h3>지원정보</h3>
+                    <ul class="support_list">
+                      <li>
+                        <p class="tit">마감일</p>
+                        <p class="txt">2024.01.10</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="qualification_area">
+                    <h3>자격 사항</h3>
+                    <div class="qualification">
+                      <h4>최소 어학 성적</h4>
+                      <div class="qualif_list">
+                        <div class="qualif_item">
+                          <span class="tit">SLEP</span>
+                          <span class="score">1,000.00</span>
+                        </div>
+                        <div class="qualif_item">
+                          <span class="tit">新HSK</span>
+                          <span class="score">-</span>
+                        </div>
+                        <div class="qualif_item">
+                          <span class="tit">ELTIS</span>
+                          <span class="score">1,000.00</span>
+                        </div>
+                        <div class="qualif_item">
+                          <span class="tit">TOPIK</span>
+                          <span class="score">1,000.00</span>
+                        </div>
+                        <div class="qualif_item">
+                          <span class="tit">TOPIK</span>
+                          <span class="score">1,000.00</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="qualification">
+                      <h4>기타 지원 자격</h4>
+                      <p>기타 지원 자격 텍스트 정보 내용</p>
+                    </div>
+                    <div class="qualification">
+                      <h4>제출서류</h4>
+                      <p>제출 서류 텍스트 정보 내용</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 리뷰 -->
+              <div id="menu4" class="custom-tab_contents">
+                <div class="pj_review">
+                  <div class="review_cnt">
+                    <h3>리뷰 <span>0건</span></h3>
+                  </div>
+                  <!-- 리뷰 데이터 없을때 -->
+                  <!-- <div class="no-data_review">
+												<img src="./img/detail/no-data.svg" alt="데이터 없을 때">
+												<h3>아직 등록된 리뷰가 없습니다</h3>
+												<p>리뷰를 작성하여 경험을 나누고 포인트도 적립해보세요!</p>
+												<div class="point_notice">
+													<h5>적립 포인트 안내</h5>
+													<div class="point">
+														<p>일반 리뷰 작성 시 <span>100 Point</span></p>
+														<p>결제 리뷰 작성 시 <span>500 Point</span></p>
+													</div>
+												</div>
+												<a href="./review/review_step1.html" class="btn_review">리뷰 작성하기</a>
+											</div> -->
+                  <div class="review_content">
+                    <div class="review_sort">
+                      <select id="select" class="custom-select select-primary">
+                        <option value="">별점 높은 순</option>
+                        <option value="">별점 낮은 순</option>
+                        <option value="">최신 순</option>
+                        <option value="">오래된 순</option>
+                      </select>
+                      <!-- 모바일 셀렉트 박스 -->
+                      <div class="mobile-select_box w100p" onclick="clickMobileSelect()">
+                        <!-- 셀렉트박스 제일 상단 옵션 -->
+                        <button type="button" id="select_option">별점 높은 순</button>
+                      </div>
+                      <a href="./review/review_step1.html" class="btn_review">리뷰 작성하기</a>
+                    </div>
+                    <div class="review_list">
+                      <div class="review_item">
+                        <div class="review_reg">
+                          <div>
+                            <p><span class="reg_nm">te**@gmail.com</span><span class="type">졸업생</span></p>
+                            <div class="star_score">
+                              <div class="common_star">
+                                <span class="fill"></span>
+                                <span class="fill"></span>
+                                <span class="fill"></span>
+                                <span class="half"></span>
+                                <span></span>
+                              </div>
+                              <span class="date">2023.10.01</span>
+                            </div>
+                          </div>
+                          <div>
+                            <span class="service_mem">서비스 이용회원</span>
+                            <button type="button" class="btn-textType btn_report"
+                              onclick="openModal('modal-report')">신고</button>
+                          </div>
+                        </div>
+                        <div class="review_cnts">
+                          <textarea class="textarea--typeA"></textarea>
+                        </div>
+                        <div class="review_modify">
+                          <button type="button" class="btn-textType btn_modify">확인</button>
+                        </div>
+                      </div>
+                      <div class="review_item">
+                        <div class="review_reg">
+                          <div>
+                            <p><span class="reg_nm">te**@gmail.com</span><span class="type">졸업생</span></p>
+                            <div class="star_score">
+                              <div class="common_star">
+                                <span class="fill"></span>
+                                <span class="fill"></span>
+                                <span class="fill"></span>
+                                <span class="half"></span>
+                                <span></span>
+                              </div>
+                              <span class="date">2023.10.01</span>
+                            </div>
+                          </div>
+                          <div>
+                            <span class="service_mem">서비스 이용회원</span>
+                            <button type="button" class="btn-textType btn_report">신고</button>
+                          </div>
+                        </div>
+                        <div class="review_cnts">
+                          <p>리뷰 TEXT 리뷰 TEXT 리뷰 TEXT 리뷰 TEXT 리뷰 TEXT</p>
+                        </div>
+                        <div class="review_modify">
+                          <button type="button" class="btn-textType btn_modify"
+                            onclick="openModal('modal-confirm-modify')">수정</button>
+                        </div>
+                      </div>
+                      <div class="review_item">
+                        <div class="review_reg">
+                          <div>
+                            <p><span class="reg_nm">te**@gmail.com</span><span class="type">졸업생</span></p>
+                            <div class="star_score">
+                              <div class="common_star">
+                                <span class="fill"></span>
+                                <span class="fill"></span>
+                                <span class="fill"></span>
+                                <span class="half"></span>
+                                <span></span>
+                              </div>
+                              <span class="date">2023.10.01</span>
+                            </div>
+                          </div>
+                          <div>
+                            <button type="button" class="btn-textType btn_report">신고</button>
+                          </div>
+                        </div>
+                        <div class="review_cnts">
+                          <p>리뷰 TEXT 리뷰 TEXT 리뷰 TEXT 리뷰 TEXT 리뷰 TEXT</p>
+                        </div>
+                        <div class="review_modify">
+                          <button type="button" class="btn-textType btn_modify"
+                            onclick="openModal('modal-delete')">삭제</button>
+                          <button type="button" class="btn-textType btn_modify"
+                            onclick="openModal('modal-confirm-modify')">수정</button>
+                        </div>
+                      </div>
+                      <div class="review_item">
+                        <div class="review_reg">
+                          <div>
+                            <p><span class="reg_nm">te**@gmail.com</span><span class="type">졸업생</span></p>
+                            <div class="star_score">
+                              <div class="common_star">
+                                <span class="fill"></span>
+                                <span class="fill"></span>
+                                <span class="fill"></span>
+                                <span class="half"></span>
+                                <span></span>
+                              </div>
+                              <span class="date">2023.10.01</span>
+                            </div>
+                          </div>
+                          <div>
+                            <span class="service_mem">서비스 이용회원</span>
+                            <button type="button" class="btn-textType btn_report">신고</button>
+                          </div>
+                        </div>
+                        <div class="review_cnts">
+                          <p>리뷰 TEXT 리뷰 TEXT 리뷰 TEXT 리뷰 TEXT 리뷰 TEXT</p>
+                        </div>
+                        <div class="review_modify">
+                          <button type="button" class="btn-textType btn_modify"
+                            onclick="openModal('modal-delete')">삭제</button>
+                          <button type="button" class="btn-textType btn_modify"
+                            onclick="openModal('modal-confirm-modify')">수정</button>
+                        </div>
+                      </div>
+                      <div class="review_item">
+                        <div class="review_reg">
+                          <div>
+                            <p><span class="reg_nm">te**@gmail.com</span><span class="type">졸업생</span></p>
+                            <div class="star_score">
+                              <div class="common_star">
+                                <span class="fill"></span>
+                                <span class="fill"></span>
+                                <span class="fill"></span>
+                                <span class="half"></span>
+                                <span></span>
+                              </div>
+                              <span class="date">2023.10.01</span>
+                            </div>
+                          </div>
+                          <div>
+                            <span class="service_mem">서비스 이용회원</span>
+                            <button type="button" class="btn-textType btn_report">신고</button>
+                          </div>
+                        </div>
+                        <div class="review_cnts">
+                          <p>리뷰 TEXT 리뷰 TEXT 리뷰 TEXT 리뷰 TEXT 리뷰 TEXT</p>
+                        </div>
+                        <div class="review_modify">
+                          <button type="button" class="btn-textType btn_modify"
+                            onclick="openModal('modal-delete')">삭제</button>
+                          <button type="button" class="btn-textType btn_modify"
+                            onclick="openModal('modal-confirm-modify')">수정</button>
+                        </div>
+                      </div>
+                    </div>
+                    <button type="button" class="btn_more">더 보기</button>
+                  </div>
+                </div>
+              </div>
+              <!-- 문의하기 -->
+              <div id="menu5" class="custom-tab_contents">
+                <div class="pj_inquiry">
+                  <form action="" class="form_inquiry">
+                    <fieldset>
+                      <div>
+                        <textarea class="textarea--typeA" placeholder="문의하실 내용을 입력해 주세요."></textarea>
+                      </div>
+                      <button type="button" class="btn_register">문의하기</button>
+                    </fieldset>
+                  </form>
+                  <div class="inquiry_list">
+                    <div class="inquiry_item">
+                      <div class="reg_info">
+                        <span class="nm">te**@gmail.com</span>
+                        <span class="date">2023.10.01</span>
+                      </div>
+                      <div class="reg_cnts">
+                        문의 내용 TEXT 문의 내용 TEXT 문의 내용 TEXT 문의 내용 TEXT 문의 내용 TEXT
+                      </div>
+                      <div class="inquiry_answer">
+                        <p>답변 (2)<button type="button" class="btn_open"></button></p>
+                        <div class="inquiry_answer_list">
+                          <div class="inquiry_answer_item">
+                            <div class="reg_info">
+                              <span class="answer_nm yellow">커넥티드 관리자</span>
+                              <span class="date">2023.10.01</span>
+                            </div>
+                            <div class="reg_cnts">
+                              문의 내용 TEXT 문의 내용 TEXT 문의 내용 TEXT 문의 내용 TEXT 문의 내용 TEXT
+                            </div>
+                          </div>
+                          <div class="inquiry_answer_item">
+                            <div class="reg_info">
+                              <span class="answer_nm purple">교육기관 담당자</span>
+                              <span class="date">2023.10.01</span>
+                            </div>
+                            <div class="reg_cnts">
+                              문의 내용 TEXT 문의 내용 TEXT 문의 내용 TEXT 문의 내용 TEXT 문의 내용 TEXT
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="inquiry_item">
+                      <div class="reg_info">
+                        <span class="nm">te**@gmail.com</span>
+                        <span class="date">2023.10.01</span>
+                      </div>
+                      <div class="reg_cnts">
+                        문의 내용 TEXT 문의 내용 TEXT 문의 내용 TEXT 문의 내용 TEXT 문의 내용 TEXT
+                      </div>
+                      <div class="reg_btns">
+                        <button type="button" class="btn-textType btn_delete"
+                          onclick="openModal('modal-delete')">삭제</button>
+                      </div>
+                    </div>
+                    <div class="inquiry_item">
+                      <div class="reg_info">
+                        <span class="nm">te**@gmail.com</span>
+                        <span class="date">2023.10.01</span>
+                      </div>
+                      <div class="reg_cnts">
+                        문의 내용 TEXT 문의 내용 TEXT 문의 내용 TEXT 문의 내용 TEXT 문의 내용 TEXT
+                      </div>
+                    </div>
+                    <div class="inquiry_item">
+                      <div class="reg_info">
+                        <span class="nm">te**@gmail.com</span>
+                        <span class="date">2023.10.01</span>
+                      </div>
+                      <div class="reg_cnts">
+                        문의 내용 TEXT 문의 내용 TEXT 문의 내용 TEXT 문의 내용 TEXT 문의 내용 TEXT
+                      </div>
+                    </div>
+                  </div>
+                  <button type="button" class="btn_more">더 보기</button>
+                </div>
+              </div>
+            </div>
+            <!-- 서비스 플랜 & 지원 -->
+            <div class="pj_detailed_service">
+              <div class="service_plan">
+                <h3 class="sub_title">서비스 플랜</h3>
+                <div class="cnts">
+                  <div class="radio--typeA basic mb10">
+                    <label for="basic">
+                      <input type="radio" id="basic" name="service_plan" checked>
+                      <em><span>베이직</span></em>
+                    </label>
+                  </div>
+                  <div class="radio--typeA premium">
+                    <label for="premium">
+                      <input type="radio" id="premium" name="service_plan"><em><span>프리미엄</span></em>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="service_contents">
+                <h3 class="sub_title">서비스 내용
+                  <button type="button" class="btn_question"></button>
+                  <p class="service_cnts">하기 서비스내용에 대한 비용입니다. 추가서비스는 상담 후 비용이 확정되면, 전문가 리뷰 전에 결제 되지 않습니다.</p>
+                </h3>
+                <div class="service">
+                  <h4>지원서 전문가 리뷰</h4>
+                  <ul>
+                    <li>지원시 필요항목 안내</li>
+                    <li>지원서 작성 보조 및 수정</li>
+                    <li>학생 & 부모님 에세이 관리 및 작성 도움 부모님</li>
+                    <li>지원서 작성 보조 및 수정</li>
+                  </ul>
+                </div>
+                <div class="service">
+                  <h4>컨설팅</h4>
+                  <ul>
+                    <li>인터뷰 연습 [모의인터뷰 연습 2회 무료제공]</li>
+                    <li>제정보조 / 장학금 안내 및 지원 도움</li>
+                  </ul>
+                </div>
+                <div class="service">
+                  <h4>필요 시 추가 서비스</h4>
+                  <ul class="flex_service">
+                    <li>가디언 매칭</li>
+                    <li>보험 구매대행</li>
+                    <li>항공권 구매대행</li>
+                    <li>비자 구매대행</li>
+                    <li>Homestay matching</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="must_check">
+                <h3>꼭 확인해주세요.</h3>
+                <p>*지원료는 교육기관이 모든 지원자에게 청구하는 비용입니다.</p>
+                <p>*결제 시 지원료에 카드 수수료 5%가 부과됩니다.</p>
+              </div>
+              <div class="service_cost">
+                <div>
+                  <div class="tit">
+                    <span>서비스 비용</span>
+                  </div>
+                  <b>무료</b>
+                </div>
+                <div>
+                  <div class="tit">
+                    <span>지원료</span>
+                    <button type="button" class="btn_question"></button>
+                    <p class="service_cnts">커넥티드에서 제공하는 서비스에 대한 비용입니다. 추가서비스 희망 시 지원서 제출 후 추가요금이 발생할 수 있습니다.</p>
+                  </div>
+                  <b class="cost">$ 80</b>
+                </div>
+              </div>
+              <div class="service_btns">
+                <a href="#" class="btn-service_consult">상담예약</a>
+                <div class="write">
+                  <span>커넥티드가 도와드려요!</span>
+                  <a href="#" class="btn_write">지원서 작성하기</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 다른 사람이 함께 본 -->
+      <div class="relation_container detail">
+        <div class="relation_magazine">
+          <div class="title">
+            <h3>다른 사람이 함께 본 온라인 학교</h3>
+          </div>
+          <div class="swiper magazine-slide__swiper school-item__swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="school-card-item small">
+                  <div class="content">
+                    <div class="btn_like_box">
+                      <input type="checkbox" id="btn_like1" />
+                      <label for="btn_like1">
+                        <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+                          <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                            <path
+                              d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                              stroke="#fff" stroke-width="2" id="heart" fill="transparent" />
+                            <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+                          </g>
+                        </svg>
+                      </label>
+                    </div>
+                    <div class="card_front">
+                      <button class="partners">
+                        <em>교육기관이 직접 제공한 데이터입니다</em>
+                      </button>
+                      <a href="./detail.html" class="thum">
+                        <em class="grade">A+</em>
+                        <img src="./img/item_thum02.png" alt="썸네일 이미지">
+                        <div class="badge_list">
+                          <!-- 마감임박 : pink -->
+                          <span class="badge pink">마감임박</span>
+                        </div>
+                      </a>
+                      <div class="desc">
+                        <p class="star_loc">
+                          <span class="star">4.0(1,200)</span>
+                          <span class="loc">호주 퀸즐랜드</span>
+                        </p>
+                        <h3 class="title">호주 골드코스트 겨울방학 영어캠프
+                          2023</h3>
+                        <p class="price">NZD - $ 2,000 ~</p>
+                      </div>
+                    </div>
+                    <a href="./detail.html" class="card_back">
+                      <div class="btn_like_hover">
+                        <span>관심리스트 추가</span>
+                      </div>
+                      <div class="back_title">
+                        <span class="loc">뉴질랜드 오클랜드</span>
+                        <h3 class="title">뉴질랜드 스쿨링 영어캠프 2023</h3>
+                        <span class="hashtag">#기숙 #통학</span>
+                      </div>
+                      <p class="price">NZD - $ 2,000 ~</p>
+                      <em class="grade">A+</em>
+                      <span class="partners"></span>
+                      <div class="back_end">
+                        <span class="name">JEC CAMP</span>
+                        <small>교육기관이 직접 제공한 데이터입니다</small>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="school-card-item small">
+                  <div class="content">
+                    <div class="btn_like_box">
+                      <input type="checkbox" id="btn_like1" />
+                      <label for="btn_like1">
+                        <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+                          <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                            <path
+                              d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                              stroke="#fff" stroke-width="2" id="heart" fill="transparent" />
+                            <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+                          </g>
+                        </svg>
+                      </label>
+                    </div>
+                    <div class="card_front">
+                      <button class="partners">
+                        <em>교육기관이 직접 제공한 데이터입니다</em>
+                      </button>
+                      <a href="./detail.html" class="thum">
+                        <em class="grade">A+</em>
+                        <img src="./img/item_thum02.png" alt="썸네일 이미지">
+                        <div class="badge_list">
+                          <!-- 마감임박 : pink -->
+                          <span class="badge pink">마감임박</span>
+                        </div>
+                      </a>
+                      <div class="desc">
+                        <p class="star_loc">
+                          <span class="star">4.0(1,200)</span>
+                          <span class="loc">호주 퀸즐랜드</span>
+                        </p>
+                        <h3 class="title">호주 골드코스트 겨울방학 영어캠프
+                          2023</h3>
+                        <p class="price">NZD - $ 2,000 ~</p>
+                      </div>
+                    </div>
+                    <a href="./detail.html" class="card_back">
+                      <div class="btn_like_hover">
+                        <span>관심리스트 추가</span>
+                      </div>
+                      <div class="back_title">
+                        <span class="loc">뉴질랜드 오클랜드</span>
+                        <h3 class="title">뉴질랜드 스쿨링 영어캠프 2023</h3>
+                        <span class="hashtag">#기숙 #통학</span>
+                      </div>
+                      <p class="price">NZD - $ 2,000 ~</p>
+                      <em class="grade">A+</em>
+                      <span class="partners"></span>
+                      <div class="back_end">
+                        <span class="name">JEC CAMP</span>
+                        <small>교육기관이 직접 제공한 데이터입니다</small>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="school-card-item small">
+                  <div class="content">
+                    <div class="btn_like_box">
+                      <input type="checkbox" id="btn_like1" />
+                      <label for="btn_like1">
+                        <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+                          <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                            <path
+                              d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                              stroke="#fff" stroke-width="2" id="heart" fill="transparent" />
+                            <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+                          </g>
+                        </svg>
+                      </label>
+                    </div>
+                    <div class="card_front">
+                      <button class="partners">
+                        <em>교육기관이 직접 제공한 데이터입니다</em>
+                      </button>
+                      <a href="./detail.html" class="thum">
+                        <em class="grade">A+</em>
+                        <img src="./img/item_thum02.png" alt="썸네일 이미지">
+                        <div class="badge_list">
+                          <!-- 마감임박 : pink -->
+                          <span class="badge pink">마감임박</span>
+                        </div>
+                      </a>
+                      <div class="desc">
+                        <p class="star_loc">
+                          <span class="star">4.0(1,200)</span>
+                          <span class="loc">호주 퀸즐랜드</span>
+                        </p>
+                        <h3 class="title">호주 골드코스트 겨울방학 영어캠프
+                          2023</h3>
+                        <p class="price">NZD - $ 2,000 ~</p>
+                      </div>
+                    </div>
+                    <a href="./detail.html" class="card_back">
+                      <div class="btn_like_hover">
+                        <span>관심리스트 추가</span>
+                      </div>
+                      <div class="back_title">
+                        <span class="loc">뉴질랜드 오클랜드</span>
+                        <h3 class="title">뉴질랜드 스쿨링 영어캠프 2023</h3>
+                        <span class="hashtag">#기숙 #통학</span>
+                      </div>
+                      <p class="price">NZD - $ 2,000 ~</p>
+                      <em class="grade">A+</em>
+                      <span class="partners"></span>
+                      <div class="back_end">
+                        <span class="name">JEC CAMP</span>
+                        <small>교육기관이 직접 제공한 데이터입니다</small>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="school-card-item small">
+                  <div class="content">
+                    <div class="btn_like_box">
+                      <input type="checkbox" id="btn_like1" />
+                      <label for="btn_like1">
+                        <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+                          <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                            <path
+                              d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                              stroke="#fff" stroke-width="2" id="heart" fill="transparent" />
+                            <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+                          </g>
+                        </svg>
+                      </label>
+                    </div>
+                    <div class="card_front">
+                      <button class="partners">
+                        <em>교육기관이 직접 제공한 데이터입니다</em>
+                      </button>
+                      <a href="./detail.html" class="thum">
+                        <em class="grade">A+</em>
+                        <img src="./img/item_thum02.png" alt="썸네일 이미지">
+                        <div class="badge_list">
+                          <!-- 마감임박 : pink -->
+                          <span class="badge pink">마감임박</span>
+                        </div>
+                      </a>
+                      <div class="desc">
+                        <p class="star_loc">
+                          <span class="star">4.0(1,200)</span>
+                          <span class="loc">호주 퀸즐랜드</span>
+                        </p>
+                        <h3 class="title">호주 골드코스트 겨울방학 영어캠프
+                          2023</h3>
+                        <p class="price">NZD - $ 2,000 ~</p>
+                      </div>
+                    </div>
+                    <a href="./detail.html" class="card_back">
+                      <div class="btn_like_hover">
+                        <span>관심리스트 추가</span>
+                      </div>
+                      <div class="back_title">
+                        <span class="loc">뉴질랜드 오클랜드</span>
+                        <h3 class="title">뉴질랜드 스쿨링 영어캠프 2023</h3>
+                        <span class="hashtag">#기숙 #통학</span>
+                      </div>
+                      <p class="price">NZD - $ 2,000 ~</p>
+                      <em class="grade">A+</em>
+                      <span class="partners"></span>
+                      <div class="back_end">
+                        <span class="name">JEC CAMP</span>
+                        <small>교육기관이 직접 제공한 데이터입니다</small>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="school-card-item small">
+                  <div class="content">
+                    <div class="btn_like_box">
+                      <input type="checkbox" id="btn_like1" />
+                      <label for="btn_like1">
+                        <svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+                          <g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+                            <path
+                              d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+                              stroke="#fff" stroke-width="2" id="heart" fill="transparent" />
+                            <circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+                          </g>
+                        </svg>
+                      </label>
+                    </div>
+                    <div class="card_front">
+                      <button class="partners">
+                        <em>교육기관이 직접 제공한 데이터입니다</em>
+                      </button>
+                      <a href="./detail.html" class="thum">
+                        <em class="grade">A+</em>
+                        <img src="./img/item_thum02.png" alt="썸네일 이미지">
+                        <div class="badge_list">
+                          <!-- 마감임박 : pink -->
+                          <span class="badge pink">마감임박</span>
+                        </div>
+                      </a>
+                      <div class="desc">
+                        <p class="star_loc">
+                          <span class="star">4.0(1,200)</span>
+                          <span class="loc">호주 퀸즐랜드</span>
+                        </p>
+                        <h3 class="title">호주 골드코스트 겨울방학 영어캠프
+                          2023</h3>
+                        <p class="price">NZD - $ 2,000 ~</p>
+                      </div>
+                    </div>
+                    <a href="./detail.html" class="card_back">
+                      <div class="btn_like_hover">
+                        <span>관심리스트 추가</span>
+                      </div>
+                      <div class="back_title">
+                        <span class="loc">뉴질랜드 오클랜드</span>
+                        <h3 class="title">뉴질랜드 스쿨링 영어캠프 2023</h3>
+                        <span class="hashtag">#기숙 #통학</span>
+                      </div>
+                      <p class="price">NZD - $ 2,000 ~</p>
+                      <em class="grade">A+</em>
+                      <span class="partners"></span>
+                      <div class="back_end">
+                        <span class="name">JEC CAMP</span>
+                        <small>교육기관이 직접 제공한 데이터입니다</small>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="pagination_progress"></div>
+          </div>
+        </div>
+      </div>
+      <!-- 모바일 하단 버튼 -->
+      <div class="dtl-mobile_btns service_btns">
+        <a href="#" class="btn-service_consult">상담예약</a>
+        <div class="write">
+          <span>커넥티드가 도와드려요!</span>
+          <a href="#" class="btn_write">지원서 작성하기</a>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer__inner">
+        <div class="ft__cmpny-info">
+          <div class="logo">
+            <img src="/img/common/logo.svg" alt="커넥티드 로고">
+          </div>
+          <div class="setting-lang">
+            <span class="current">KOR</span>
+            <button type="button" class="btn_open"></button>
+            <ul class="lang_list">
+              <li>KOR</li>
+              <li>ENG</li>
+              <li>CN</li>
+            </ul>
+          </div>
+          <button type="button" class="btn_consult"><span>전화상담 예약</span></button>
+          <button type="button" class="open_company_info">
+            <span>사업자 정보 펼치기</span>
+          </button>
+          <div class="ft_tel_info_cpright">
+            <div class="ft_tel_info">
+              <div class="tel">
+                <em>대표번호</em> 031-8027-7611~3 (토요일, 공휴일 휴무)<br>
+                오전 9시30분 - 오후 5시30분<br>
+                매달 마지막 금요일은 오후 3시30분까지
+              </div>
+              <div class="company-info">
+                <em>(주)비엘에프</em> <span class="dash">|</span> <br class="mobile_show">
+                <em>대표</em> 박보미 <br>
+                <em>사업자등록번호</em> 442-81-01686 <span class="dash">|</span> <br class="mobile_show"> <em>통신판매업신고</em>
+                제2020-경기하남-2190호<br>
+                <em>본사</em> 강원도 원주시 지정면 무릉로 43, 2층 207호<br>
+                <em>소재지</em> 경기도 하남시 미사대로 550<br class="mobile_show"> 현대지식산업센터 1차 A동 7층 011호<br>
+                <em>호스팅 사업자</em> Amazon Web Service (AWS)<br>
+              </div>
+            </div>
+            <p class="copyright">copyright 2023 Connect.ED. All rights Reserved</p>
+          </div>
+        </div>
+        <div class="ft__menu">
+          <div class="ft__gnb">
+            <dl class="menu">
+              <dt><a href="#">커넥티드</a></dt>
+              <dd><a href="#">커넥티드 메인</a></dd>
+              <dd><a href="#">커넥티드 파트너스</a></dd>
+            </dl>
+            <dl class="menu">
+              <dt><a href="#">해외교육</a></dt>
+              <dd><a href="#">맞춤 유학 찾기</a></dd>
+              <dd><a href="#">학교</a></dd>
+              <dd><a href="#">온라인 스쿨</a></dd>
+              <dd><a href="#">단기활동</a></dd>
+            </dl>
+            <dl class="menu">
+              <dt><a href="#">고객센터</a></dt>
+              <dd><a href="#">자주묻는질문</a></dd>
+              <dd><a href="#">공지사항</a></dd>
+              <dd><a href="#">전화상담 예약</a></dd>
+            </dl>
+            <div class="setting-lang">
+              <span class="current">KOR</span>
+              <button type="button" class="btn_open"></button>
+              <ul class="lang_list">
+                <li>KOR</li>
+                <li>ENG</li>
+                <li>CN</li>
+              </ul>
+            </div>
+          </div>
+          <div class="ft__sns">
+            <ul>
+              <li><a href="#" class="sns_blog"></a></li>
+              <li><a href="#" class="sns_facebook"></a></li>
+              <li><a href="#" class="sns_insta"></a></li>
+            </ul>
+            <div class="terms-use">
+              <button type="button">이용약관</button>
+              <button type="button">개인정보보호정책</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 공유 모달 시작 -->
+    <div id="modal-share-school" class="modal modal_share">
+      <div class="modal__inner">
+        <div class="modal__close">
+          <button type="button" class="btn_modal-close" onclick="closeModal('modal-share-school')"></button>
+        </div>
+        <div class="modal__header">
+          <p>공유하기</p>
+        </div>
+        <div class="modal__content">
+          <div class="share_sns">
+            <a href="#" class="share_email">
+              <div class="img"></div><span>이메일</span>
+            </a>
+            <a href="#" class="share_kakao">
+              <div class="img"></div><span>카카오톡</span>
+            </a>
+            <a href="#" class="share_naver">
+              <div class="img"></div><span>네이버</span>
+            </a>
+            <a href="#" class="share_facebook">
+              <div class="img"></div><span>페이스북</span>
+            </a>
+            <a href="#" class="share_url">
+              <div class="img"></div><span>링크 복사</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 공유 모달 끝 -->
+    <!-- 커리큘럼 모달 시작 -->
+    <div id="modal-curriculum-list" class="modal modal_curriculum_list">
+      <div class="modal__inner">
+        <div class="modal__close">
+          <button type="button" class="btn_modal-close" onclick="closeModal('modal-curriculum-list')"></button>
+        </div>
+        <div class="modal__header">
+          <p>· AP(Advanced Placement)</p>
+        </div>
+        <div class="modal__content">
+          <div class="modal-curriculum_list">
+            <div class="curriculum_item">
+              <p>- AP ResearchAP ResearchAP ResearchAP ResearchAP Research</p>
+            </div>
+            <div class="curriculum_item">
+              <p>- AP Research</p>
+            </div>
+            <div class="curriculum_item">
+              <p>- AP Research</p>
+            </div>
+            <div class="curriculum_item">
+              <p>- AP Research</p>
+            </div>
+            <div class="curriculum_item">
+              <p>- AP Research</p>
+            </div>
+            <div class="curriculum_item">
+              <p>- AP Research</p>
+            </div>
+            <div class="curriculum_item">
+              <p>- AP Research</p>
+            </div>
+            <div class="curriculum_item">
+              <p>- AP Research</p>
+            </div>
+            <div class="curriculum_item">
+              <p>- AP Research</p>
+            </div>
+            <div class="curriculum_item">
+              <p>- AP Research</p>
+            </div>
+            <div class="curriculum_item">
+              <p>- AP Research</p>
+            </div>
+            <div class="curriculum_item">
+              <p>- AP Research</p>
+            </div>
+            <div class="curriculum_item">
+              <p>- AP ResearchAP ResearchAP ResearchAP ResearchAP Research</p>
+            </div>
+            <div class="curriculum_item">
+              <p>- AP Research</p>
+            </div>
+            <div class="curriculum_item">
+              <p>- AP Research</p>
+            </div>
+            <div class="curriculum_item">
+              <p>- AP Research</p>
+            </div>
+            <div class="curriculum_item">
+              <p>- AP Research</p>
+            </div>
+            <div class="curriculum_item">
+              <p>- AP Research</p>
+            </div>
+            <div class="curriculum_item">
+              <p>- AP Research</p>
+            </div>
+            <div class="curriculum_item">
+              <p>- AP Research</p>
+            </div>
+            <div class="curriculum_item">
+              <p>- AP Research</p>
+            </div>
+            <div class="curriculum_item">
+              <p>- AP Research</p>
+            </div>
+            <div class="curriculum_item">
+              <p>- AP Research</p>
+            </div>
+            <div class="curriculum_item">
+              <p>- AP Research</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 커리큘럼 모달 끝 -->
+    <!-- 제공학년 모달 시작 -->
+    <div id="modal-offer-grade" class="modal modal_offer_grade">
+      <div class="modal__inner">
+        <div class="modal__close">
+          <button type="button" class="btn_modal-close" onclick="closeModal('modal-offer-grade')"></button>
+        </div>
+        <div class="modal__header">
+          <p>· 제공학년</p>
+        </div>
+        <div class="modal__content">
+          <div class="offer-grade_list">
+            <div class="offer-grade_item">
+              <div class="info">
+                <h4>전체 제공학년</h4>
+                <p>
+                  학교에서 제공하는 전체 학년입니다.<br>
+                  학교 전체 규모를 파악할 수 있어요.
+                </p>
+              </div>
+              <b class="grade">K ~ G12</b>
+            </div>
+            <div class="offer-grade_item">
+              <div class="info">
+                <h4>국제학생 지원가능 학년</h4>
+                <p>
+                  국제학생은 해당 학년에만<br>
+                  지원할 수 있어요.
+                </p>
+              </div>
+              <b class="grade">G9 ~ G11</b>
+            </div>
+            <div class="offer-grade_item">
+              <div class="info">
+                <h4>국제학생 기숙가능 학년</h4>
+                <p>
+                  국제학생은 해당 학년에만<br>
+                  기숙 생활을 할 수 있어요.
+                </p>
+              </div>
+              <b class="grade">G9 ~ G12</b>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 제공학년 모달 끝 -->
+    <!-- 수정 확인 모달 시작 -->
+    <div id="modal-confirm-modify" class="modal modal_confirm_modify">
+      <div class="modal__inner">
+        <div class="modal__content">
+          <p>
+            수정은 <b>1회만 가능</b>합니다.<br>
+            수정하시겠습니까?
+          </p>
+        </div>
+        <div class="modal__btn mt20">
+          <button type="button" class="btn-modal btn_cancel" onclick="closeModal('modal-confirm-modify')">취소</button>
+          <button type="button" class="btn-modal btn_confirm">확인</button>
+        </div>
+      </div>
+    </div>
+    <!-- 수정 확인 모달 끝 -->
+
+    <!-- 로그인 모달 시작 -->
+    <div id="modal-login" class="modal modal_login">
+      <div class="modal__inner">
+        <div class="modal__close">
+          <button type="button" class="btn_modal-close" onclick="closeModal('modal-login')"></button>
+        </div>
+        <div class="school-login__inner">
+          <div class="login__header">
+            <h3><b>로그인/회원가입</b> 하시고<br>
+              더 많은 정보를 확인해 보세요!</h3>
+          </div>
+          <div class="login__sns">
+            <p class="tit-space">SNS로 로그인하기</p>
+            <ul class="sns_list">
+              <li><a href="#" class="login_kakao"></a></li>
+              <li><a href="#" class="login_naver"></a></li>
+              <li><a href="#" class="login_facebook"></a></li>
+            </ul>
+          </div>
+          <div class="login__email">
+            <p class="tit-space">이메일로 로그인하기</p>
+            <form action="" class="form_login">
+              <fieldset>
+                <div class="input">
+                  <input type="text" placeholder="이메일주소를 입력해주세요">
+                  <!-- TODO : active 클래스 추가하여 노출 -->
+                  <p class="err-text active">이메일 형식이 올바르지 않습니다.</p>
+                </div>
+                <div class="input">
+                  <div class="input_password">
+                    <input type="password" placeholder="비밀번호를 입력해주세요">
+                    <button type="button" class="btn_eye hide"></button>
+                  </div>
+                  <!-- TODO : active 클래스 추가하여 노출 -->
+                  <p class="err-text">비밀번호를 입력해주세요.</p>
+                </div>
+                <div class="find-pw">
+                  <button type="button" class="btn-textType" onclick="openModal('modal-find-pw')">비밀번호
+                    찾기</button>
+                </div>
+                <button type="button" class="btn-bigType btn_login">로그인</button>
+              </fieldset>
+            </form>
+            <div class="suggest_signup">
+              <p>아직 커넥티드 계정이 없으신가요? <a href="#" class="btn-textType btn_signup">계정 만들기</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 로그인 모달 끝 -->
+
+    <!-- 신고하기 모달 시작 -->
+    <div id="modal-report" class="modal modal_report bottom">
+      <div class="modal__inner">
+        <div class="modal__header">
+          <p>리뷰신고</p>
+        </div>
+        <form action="">
+          <fieldset>
+            <div class="modal__content">
+              <div class="report_reason">
+                <div class="checkbox--typeB">
+                  <label for='chk'>
+                    <input type='checkbox' id='chk' name="check_reason"><em></em> 광고/홍보 글이에요
+                  </label>
+                </div>
+                <div class="checkbox--typeB">
+                  <label for='chk1'>
+                    <input type='checkbox' id='chk1' name="check_reason"><em></em> 정치/종교 관련 글이에요
+                  </label>
+                </div>
+                <div class="checkbox--typeB">
+                  <label for='chk2'>
+                    <input type='checkbox' id='chk2' name="check_reason"><em></em> 불쾌감을 줄 수 있는 글이에요
+                  </label>
+                </div>
+                <div class="checkbox--typeB">
+                  <label for='chk3'>
+                    <input type='checkbox' id='chk3' name="check_reason"><em></em> 음란성 글이에요
+                  </label>
+                </div>
+                <div class="checkbox--typeB">
+                  <label for='chk4'>
+                    <input type='checkbox' id='chk4' name="check_reason"><em></em> 욕설 및 비방이 포함된 글이에요
+                  </label>
+                </div>
+                <div class="checkbox--typeB">
+                  <label for='chk5'>
+                    <input type='checkbox' id='chk5' name="check_reason"><em></em> 중복/도배성 글이에요
+                  </label>
+                </div>
+                <div class="checkbox--typeB">
+                  <label for='chk6'>
+                    <input type='checkbox' id='chk6' name="check_reason" onchange="checkEtc(this)"><em></em> 기타
+                  </label>
+                </div>
+              </div>
+              <div class="write_reason">
+                <textarea id="textarea_etc" class="textarea--typeA" disabled></textarea>
+                <small>내용은 10자 이상 입력해야 제출가능합니다.</small>
+              </div>
+            </div>
+            <div class="modal__btn mt20">
+              <button type="button" class="btn-modal btn_cancel" onclick="closeModal('modal-report')">취소</button>
+              <button type="button" class="btn-modal btn_confirm"
+                onclick="openModal('modal-confirm-report')">확인</button>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+    <!-- 신고하기 모달 끝 -->
+
+    <!-- 신고하기 확인 모달 시작 -->
+    <div id="modal-confirm-report" class="modal modal_confirm_report bottom">
+      <div class="modal__inner">
+        <div class="modal__header">
+          <p>리뷰신고</p>
+        </div>
+        <div class="modal__content">
+          <h3>리뷰 신고가 완료되었습니다.</h3>
+          <p>관리자 확인 후 조치할 예정입니다.</p>
+        </div>
+        <div class="modal__btn mt20">
+          <button type="button" class="btn-modal btn_confirm" onclick="closeModal('modal-confirm-report')">확인</button>
+        </div>
+      </div>
+    </div>
+    <!-- 신고하기 확인 모달 끝 -->
+
+    <!-- 삭제하기 모달 시작 -->
+    <div id="modal-delete" class="modal modal_delete">
+      <div class="modal__inner">
+        <div class="modal__content">
+          <h3>삭제하시겠습니까?</h3>
+        </div>
+        <div class="modal__btn mt20">
+          <button type="button" class="btn-modal btn_cancel" onclick="closeModal('modal-delete')">취소</button>
+          <button type="button" class="btn-modal btn_confirm">확인</button>
+        </div>
+      </div>
+    </div>
+    <!-- 삭제하기 모달 끝 -->
+
+    <!-- 모바일 정렬 선택 모달 시작 -->
+    <div id="modal-select-choose" class="modal modal_select_choose bottom">
+      <div class="modal__inner">
+        <div class="modal__close">
+          <button type="button" class="btn_modal-close" onclick="closeModal('modal-select-choose')"></button>
+        </div>
+        <div class="modal__header">
+          <p>정렬</p>
+        </div>
+        <div class="modal__content">
+          <form action="" class="form_select">
+            <fieldset>
+              <ul class="select_option">
+                <li>
+                  <button type="button" value="us" onclick="selectOption(this)">별점 높은 순</button>
+                </li>
+                <li>
+                  <button type="button" value="us" onclick="selectOption(this)">별점 낮은 순</button>
+                </li>
+                <li>
+                  <button type="button" value="us" onclick="selectOption(this)">최신순</button>
+                </li>
+                <li>
+                  <button type="button" value="us" onclick="selectOption(this)">오래된 순</button>
+                </li>
+              </ul>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- 모바일 정렬 선택 모달 끝 -->
+
+    <script>
+      /* 메인배너 스와이퍼 */
+      var main_banner_swiper = new Swiper(".dtl-thum__swiper", {
+        spaceBetween: 0,
+        centeredSlides: true,
+        loop: false,
+        loopedSlides: 1,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: '.swiper-pagination',
+        },
+      });
+
+      /* 다른 사람이 함께 본 스와이퍼 */
+      var main_category_swiper = new Swiper(".magazine-slide__swiper", {
+        spaceBetween: 30,
+        slidesPerView: 4,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          0: {
+            slidesPerView: 2,
+            spaceBetween: 6,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+        },
+        pagination: {
+          el: ".pagination_progress",
+          type: 'progressbar'
+        }
+      });
+
+      $(function () {
+        $('.inquiry_answer>p').click(function () {
+          $(this).toggleClass('active')
+          $(this).siblings().slideToggle()
+        })
+
+        setTimeout(function () {
+          $('#current_viewing').fadeOut()
+        }, 3000)
+
+
+        $('.school_contact .info_list .btn_more').click(function () {
+          $(this).parents().toggleClass('active')
+        })
+
+        let infoCnt = $('.school_facility .info_list .info_item').length;
+        if (infoCnt <= 6) {
+          $('.school_facility .info_list .btn_more').hide()
+        }
+      })
+
+      // 모바일 세부정보 보이면 탭 상단 고정
+      $(window).on('scroll', function () {
+        if (checkVisible($('.pj_detailed'))) {
+          $('.pj_detailed .custom-tabs').addClass('fix')
+          let title = $('#pj_title').text()
+          console.log(title)
+          $('.mobile__header h3.title').text(title)
+        } else {
+          $('.pj_detailed .custom-tabs').removeClass('fix')
+          $('.mobile__header h3.title').text('')
+        }
+      });
+
+      function checkEtc(event) {
+        if (event.checked) {
+          $('#textarea_etc').attr('disabled', false)
+        } else {
+          $('#textarea_etc').val('')
+          $('#textarea_etc').attr('disabled', true)
+        }
+
+      }
+
+      function checkVisible(elm, eval) {
+        eval = eval || "object visible";
+        var viewportHeight = $(window).height(),
+          scrolltop = $(window).scrollTop(),
+          y = $(elm).offset().top + 500,
+          elementHeight = $(elm).height();
+
+        if (eval == "object visible") return ((y < (viewportHeight + scrolltop)) && (y > (scrolltop - elementHeight)));
+        if (eval == "above") return ((y < (viewportHeight + scrolltop)));
+      }
+
+      function clickMobileSelect() {
+        var ww = $(window).width();
+        if (ww > 768) {
+          return;
+        } else {
+          openModal('modal-select-choose')
+        }
+      }
+
+      function selectOption(event) {
+        closeModal('modal-select-choose')
+      }
+    </script>
+
+    <script type="text/javascript">
+      jQuery(function () {
+        PB.toggle_item_fav = function (fav_type_, fav_id_, toggle_, callback_) {
+          callback_ = callback_ ? callback_ : $.noop;
+
+          PB.post("toggle-item-fav", {
+            fav_type: fav_type_,
+            fav_id: fav_id_,
+            toggle_yn: !!toggle_ ? "Y" : "N",
+          }, $.proxy(function (bool_, response_json_) {
+            if (!bool_ || response_json_.success !== true) {
+              PB.alert(response_json_.error_title || __("에러발생", PBVAR['theme_domain']), response_json_.error_message || __("통신 중, 에러가 발생했습니다.", PBVAR['theme_domain']), __("확인", PBVAR['theme_domain']));
+              this.apply(window, [false]);
+              return;
+            }
+
+            this.apply(window, [true]);
+
+            $("[data-item-fav-total-count='" + response_json_.fav_type + "']").text(PB.make_currency(response_json_.total_count));
+
+            $(document).trigger("item.fav.toggled", [response_json_.fav_type, response_json_.fav_id, response_json_.total_count]);
+
+          }, callback_));
+        }
+
+        $(document).on("click", "[data-item-fav-btn]", function (event_) {
+          var target_item_ = $(event_.target);
+          var args_ = target_item_.attr("data-item-fav-btn");
+          args_ = args_.split(",");
+
+          if (!PBVAR['is_user_logged_in']) {
+            document.location = PBVAR["user_login_url"];
+          } else {
+
+            var before_actived_ = target_item_.hasClass("actived");
+
+            PB.toggle_item_fav(args_[0], args_[1], !before_actived_, $.proxy(function (result_) {
+              if (!result_) return;
+              this.toggleClass("actived");
+            }, target_item_));
+          }
+
+          return false;
+        });
+      });
+    </script>
+
+    <script type="text/javascript">
+      jQuery(function () {
+
+        $("[data-media-post-id]").click(function () {
+
+          PB.post("post-load-media-popup", {
+            post_id: $(this).attr("data-media-post-id"),
+          }, function (result_, response_json_) {
+            if (!result_ || response_json_.success !== true) {
+              PB.alert(response_json_.error_title || "에러발생", response_json_.error_message || "미디어를 불러오는 중, 에러가 발생했습니다.");
+              return;
+            }
+
+            $("#pb-post-media-view-modal").remove();
+            $(response_json_.popup_html).appendTo("body");
+
+            var post_media_view_modal_ = $("#pb-post-media-view-modal");
+            post_media_view_modal_.on("hidden.bs.modal", function () {
+              $("#pb-post-media-view-modal").remove();
+            });
+            post_media_view_modal_.modal("show");
+
+          }, true);
+
+          return false;
+        });
+      });
+    </script>
+
+    <div class="settlen-fail-popup information-popup" style="display:none;">
+      <div class="box information-box-popup">
+        <div class="img"><img class="settlen-img" src="/html/images/icon_error.png" alt=""></div>
+        <div class="txt1 settlen-title">결제에 실패했습니다</div>
+        <div class="txt2 settlen-body">[결제포기] 사용자가 결제를 취소하였습니다.</div>
+        <div class="btnA"><a href="#"><span class="settlen-footer">결제 화면으로</span></a></div>
+      </div>
+    </div>
+
+    <!-- support-view-popup -->
+    <div class="sub-list-popup confirm-popup" style="display:none;">
+      <div class="box confirm-box-popup">
+        <div class="txt1 settlen-title">주의!</div>
+        <div class="txt2 settlen-body">정말 페이지를 나가시겠습니까?<br>작성하신 내용은 저장되지 않습니다.</div>
+        <div class="btnA">
+          <a href="#" class="cancel" onclick="javascript:ationClose();">취소</a>
+          <a href="#" class="f-red BTN-ATION-CONFIRM-OK">확인</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="sub-list-popup delete-popup" style="display:none;">
+      <div class="box delete-box-popup">
+        <div class="txt1 settlen-title">결제내역 삭제</div>
+        <div class="txt2 settlen-body">결제내역을 삭제하시겠습니까? <br>삭제 후에는 복구할 수 없습니다.</div>
+        <div class="btnA">
+          <a href="#" class="cancel" onclick="javascript:ationClose();">취소</a>
+          <a href="#" class="f-red BTN-ATION-DELETE-OK">삭제</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="fm-NSCK">
+
+      <div class="sns-pop consulting-popup" style="display:none;">
+        <div class="box">
+          <div class="close">
+            <a href="#"><img src="/html/images/quick_close.png" alt=""></a>
+          </div>
+          <div class="title">상담 수단 선택</div>
+          <div class="cont">
+            <ul>
+              <li>
+                <!--<a href="javascript:phoneConsultation();">-->
+                <a href="https://whattime.co.kr/connect_ed" target="_blank">
+                  <img src="/html/images/inquiry_call.png" alt="">
+                  <div class="txt">
+                    <p>전화상담 예약</p>
+                    <p>예약하신 시간에 전화드려요!</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a id="chat-channel-button" href="javascript:kakaoChannel();">
+                  <img src="/html/images/inquiry_kakao.png" alt="">
+                  <div class="txt">
+                    <p>카카오 상담</p>
+                    <p>실시간 답장이 가능합니다!</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="javascript:Channeltalk();">
+                  <img src="/html/images/inquiry_hello.png" alt="">
+                  <div class="txt">
+                    <p>Hello :)</p>
+                    <p>Can we help?</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="sns-appointment-pop" style="display:none;">
+        <div class="box">
+          <div class="txt1">
+            <span>조기유학</span>
+            전화상담 예약이 완료되었습니다.
+          </div>
+          <div class="txt2">예약된 시간에 전문 카운슬러가 전화 드리겠습니다 :)</div>
+          <div class="cont">
+            <p>2023. 01. 27 금요일',PB_THEME_DOMAIN)?></p>
+            <p>오전 10시 30분(UTC+9)</p>
+          </div>
+          <ul>
+            <li>
+              <span>예약자명</span>
+              <strong>홍길동</strong>
+            </li>
+            <li>
+              <span>문의국가</span>
+              <strong>미국</strong>
+            </li>
+            <li>
+              <span>문의내용</span>
+              <strong>문의내용은 고객이 입력한 만큼 노출되기 때문에 길어질 수 있습니다. 이후에는 문의내용은 고객이 입력한 만큼 노출되기 때문에 길어질 수 있습니다.이후에는 문의내용은 고객이 입력한
+                만큼 노출되기 때문에 길어질 수 있습니다.이후에는 문의내용은 고객이 입력한 만큼 노출되기 때문에 길어질 수 있습니다.</strong>
+            </li>
+          </ul>
+          <div class="btnA">
+            <a href="#">확인</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script>
+      $('.quick-sns-close').on('click', function (e) {
+        console.log('ioioio');
+        //ChannelIO('hideMessenger');
+        //$('.quick-sns').hide();
+      });
+      (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://t1.kakaocdn.net/kakao_js_sdk/2.1.0/kakao.channel.min.js';
+        js.integrity = 'sha384-MEvxc+j9wOPB2TZ85/N6G3bt3K1/CgHSGNSM+88GoytFuzP4C9szmANjTCNfgKep';
+        js.crossOrigin = 'anonymous';
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, 'script', 'kakao-js-sdk');
+      function kakaoChannel() {
+        Kakao.Channel.chat({
+          channelPublicId: '_ximsdj',
+        });
+      }
+      function Channeltalk() {
+        $('.quick-sns, .sns-appointment-pop, .box').hide();
+        // https://developers.channel.io/reference/web-channelio-kr
+        ChannelIO('boot', { "pluginKey": "378cf6f4-3169-4a37-a85e-2e8b36cdab6a" });
+        ChannelIO('showMessenger');
+        ChannelIO('onHideMessenger', function onHideMessenger() {
+          //ChannelIO('hideMessenger');
+          ChannelIO('shutdown');
+
+          $('.quick-sns').removeClass("on");
+          $('.quick-sns').show();
+        });
+      }
+      function phoneConsultation() {
+        $('.sns-appointment-pop, .box').show();
+      }
+      function consultingChannel() {
+        $('.consulting-popup, .box').show();
+      }
+      function callingChannel() {
+        $('.consulting-popup, .box').show();
+      }
+    </script>
+
+    <script type="text/javascript">
+      // ationClose
+      function ationClose() {
+        $(".confirm-popup, .confirm-box-popup, .delete-popup, .delete-box-popup").hide();
+      }
+
+      // ationAlert
+      function ationAlert(requestData) {
+        let alertModal = $('.information-popup');
+        let alertsubModal = $('.information-box-popup');
+        if (requestData !== undefined && requestData !== null) {
+
+          if (requestData.img === 'error') {
+            alertModal.find('.settlen-img').attr("src", "/html/images/icon_error.png");
+          } else {
+            alertModal.find('.settlen-img').attr("src", "/html/images/icon_success.png");
+          }
+
+          alertModal.find('.settlen-title').html(requestData.title);
+          alertModal.find('.settlen-body').html(requestData.body);
+          alertModal.find('.settlen-footer').html(requestData.footer);
+
+          alertModal.show();
+          alertsubModal.show();
+        }
+      }
+
+      // ationConfirm
+      function ationConfirm(requestData) {
+        let confirmModal = $('.confirm-popup');
+        let confirmsubModal = $('.confirm-box-popup');
+        let buttonConfirm = confirmModal.find('.BTN-ATION-CONFIRM-OK');
+
+        if (requestData !== undefined && requestData !== null) {
+          confirmModal.find('.settlen-title').html(requestData.title);
+          confirmModal.find('.settlen-body').html(requestData.body);
+
+          buttonConfirm.off('click');
+          if (requestData.callback !== undefined && requestData.callback !== null) {
+            buttonConfirm.click(requestData.callback);
+          }
+
+          confirmModal.show();
+          confirmsubModal.show();
+        }
+      }
+
+      // ationDelete
+      function ationDelete(requestData) {
+        let confirmModal = $('.delete-popup');
+        let confirmsubModal = $('.delete-box-popup');
+        let buttonDelete = confirmModal.find('.BTN-ATION-DELETE-OK');
+
+        if (requestData !== undefined && requestData !== null) {
+          confirmModal.find('.settlen-title').html(requestData.title);
+          confirmModal.find('.settlen-body').html(requestData.body);
+
+          buttonDelete.off('click');
+          if (requestData.callback !== undefined && requestData.callback !== null) {
+            buttonDelete.click(requestData.callback);
+          }
+
+          confirmModal.show();
+          confirmsubModal.show();
+        }
+      }
+    </script>
+
+    <script type="text/javascript">
+      /*
+      window.onload = function() {
+        let deviceChk = "PC";
+        if ( deviceChk === 'MO' ) {
+          //let elfeed = $("[class*='feedback']");
+          //elfeed.each(function(index, item) {
+          //});
+    	
+          let elfg = document.querySelector('.grecaptcha-badge');
+          elfg.style.display = 'none';
+    	
+          //let elfe = document.querySelector('._hj_feedback_container');
+          //elfe.style.display = 'none';
+        }
+      }
+      */
+    </script>
+  </div>
+</body>
+
+</html>

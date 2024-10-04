@@ -1,0 +1,3193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<script type="text/javascript" src="https://dev.connectedu.com/lib/dev/js/jquery.js"></script>
+	<script
+		type="text/javascript">window.PBVAR = { "home_url": "https:\/\/dev.connectedu.com\/", "locale_domain": "pbpress", "ajax_url": "https:\/\/dev.connectedu.com\/ajax", "fileupload_url": "https:\/\/dev.connectedu.com\/fileupload", "filebase_url": "https:\/\/s3.ap-northeast-2.amazonaws.com\/cdn.supremestudyabroadtool.com", "theme_domain": "connectedu", "is_user_logged_in": false, "user_login_url": "https:\/\/dev.connectedu.com\/login" };</script>
+	<script type="text/javascript" src="https://dev.connectedu.com/lib/dev/comp-lib/all-main.js"></script>
+
+	<script type="text/plain" id="pb-crypt-public-key">-----BEGIN PUBLIC KEY-----
+		MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuPYcc3xNRQ49mjAFfQ0V
+		mcW5aXBX7z6r5HMCnOBP8WiXCs3kCJqtrM2o2lXFKZukvsuI7QW7f6AWAmvL1sN/
+		Q5YoKs6V9qjsnLlt/2LAy/odOZ2H+7gNHF0wTEG9qEUmwvNeIEV+GFSQcoHY72I5
+		FLKdRMJeWoF7N8BAWGl99+PPXyscviH8jyGqNUGya+Dj2mW7z36FZ4mIE7l7hry0
+		PXfpLLOR6eMtTD8qcmXia2AugJAd0PzVWax8dG0FCH4OGkjsXaI+u+d3C5AA5c2V
+		KfsBT3VxYaqnK+BzTGjIQ5lRbGrkdMy9ujKVGr6dkykrurY5pXydbaKxLSLbKcy0
+		CwIDAQAB
+		-----END PUBLIC KEY-----
+	</script>
+
+	<script type="text/javascript" src="https://dev.connectedu.com/_pblang.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://dev.connectedu.com/_page_builder_compiled.css">
+	<link rel="stylesheet" type="text/css" href="https://dev.connectedu.com/lib/dev/css/page-builder/common.css?v=2">
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvHXb0hXEJwqfcSQlM7KMxqzrxCmazlPM&libraries=geometry,places"
+		defer></script>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<link rel="apple-touch-icon" sizes="57x57"
+		href="https://dev.connectedu.com/themes/connected/img/icon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60"
+		href="https://dev.connectedu.com/themes/connected/img/icon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72"
+		href="https://dev.connectedu.com/themes/connected/img/icon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76"
+		href="https://dev.connectedu.com/themes/connected/img/icon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114"
+		href="https://dev.connectedu.com/themes/connected/img/icon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120"
+		href="https://dev.connectedu.com/themes/connected/img/icon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144"
+		href="https://dev.connectedu.com/themes/connected/img/icon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152"
+		href="https://dev.connectedu.com/themes/connected/img/icon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180"
+		href="https://dev.connectedu.com/themes/connected/img/icon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"
+		href="https://dev.connectedu.com/themes/connected/img/icon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32"
+		href="https://dev.connectedu.com/themes/connected/img/icon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96"
+		href="https://dev.connectedu.com/themes/connected/img/icon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16"
+		href="https://dev.connectedu.com/themes/connected/img/icon/favicon-16x16.png">
+	<link rel="stylesheet" type="text/css"
+		href="https://dev.connectedu.com/themes/connected/lib/dev/css/pb-main.css?v=1.0.0_debug_1Sabk">
+	<script type="text/javascript"
+		src="https://dev.connectedu.com/themes/connected/lib/dev/comp-lib/all.js?v=1.0.0_debug_1Sabk"></script>
+	<script type="text/javascript" src="https://dev.connectedu.com/themes/connected/lib/dev/js/pb-dev.js"></script>
+	<title>커넥티드</title>
+	<!-- jQuery CDN -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+	<!-- DateTimePicker -->
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+	<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+	<!-- swiper -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<!-- Star -->
+	<link rel="stylesheet" href="../js/star/star-rating-svg.css">
+	<script src="../js/star/jquery.star-rating-svg.js"></script>
+	<!-- smooth scroll -->
+	<link rel="stylesheet" href="https://unpkg.com/smooth-scrollbar@latest/dist/smooth-scrollbar.css">
+	<script src="https://unpkg.com/smooth-scrollbar@latest/dist/smooth-scrollbar.js"></script>
+	<!-- NiceSelect -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+	<!-- Custom CSS & JS -->
+	<link rel="stylesheet" href="/css/common2.css">
+	<script src="/js/common2.js" defer></script>
+	<meta name="title" content="커넥티드">
+	<meta name="keywords" content="">
+	<meta name="robots" content="index, follow">
+	<meta name="language" content="Korean">
+
+	<!-- Search Engine -->
+	<meta name="description" content="커넥티드">
+	<meta name="image" content="https://dev.connectedu.com/themes/connected/img/og.jpg">
+	<!-- Schema.org for Google -->
+	<meta itemprop="name" content="커넥티드">
+	<meta itemprop="description" content="커넥티드">
+
+	<meta itemprop="image" content="https://dev.connectedu.com/themes/connected/img/og.jpg">
+	<!-- Open Graph general (Facebook, Pinterest & Google+) -->
+	<meta property="og:title" content="커넥티드">
+	<meta property="og:description" content="커넥티드">
+	<meta property="og:locale" content="ko_KR">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://www.connectedu.com/themes/connected/img/og_new.png">
+	<meta property="og:url" content="https://dev.connectedu.com/">
+	<meta property="og:site_name" content="커넥티드">
+	<meta name="facebook-domain-verification" content="ceg8hozu78orpcw7kul1sdm6812f9u" />
+
+	<!-- Google Tag Manager -->
+	<script>(function (w, d, s, l, i) {
+			w[l] = w[l] || []; w[l].push({
+				'gtm.start':
+					new Date().getTime(), event: 'gtm.js'
+			}); var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-WJR8W6Q');</script>
+	<!-- End Google Tag Manager -->
+	<!-- naver-site-verification -->
+	<meta name="naver-site-verification" content="0484b9a899fa8076d2db02d74a9238e6f52dfea2" />
+
+	<!-- Meta Pixel Code -->
+	<script>
+		!function (f, b, e, v, n, t, s) {
+			if (f.fbq) return; n = f.fbq = function () {
+				n.callMethod ?
+					n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+			};
+			if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+			n.queue = []; t = b.createElement(e); t.async = !0;
+			t.src = v; s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window, document, 'script',
+			'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '192964157157918');
+		fbq('track', 'PageView');
+	</script>
+	<noscript><img height="1" width="1" style="display:none"
+			src="https://www.facebook.com/tr?id=192964157157918&ev=PageView&noscript=1" /></noscript>
+	<!-- End Meta Pixel Code -->
+
+	<!-- Channel Plugin Scripts -->
+	<script>
+		(function () {
+			var w = window;
+			if (w.ChannelIO) {
+				return (window.console.error || window.console.log || function () { })('ChannelIO script included twice.');
+			}
+			var ch = function () {
+				ch.c(arguments);
+			};
+			ch.q = [];
+			ch.c = function (args) {
+				ch.q.push(args);
+			};
+			w.ChannelIO = ch;
+			function l() {
+				if (w.ChannelIOInitialized) {
+					return;
+				}
+				w.ChannelIOInitialized = true;
+				var s = document.createElement('script');
+				s.type = 'text/javascript';
+				s.async = true;
+				s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+				s.charset = 'UTF-8';
+				var x = document.getElementsByTagName('script')[0];
+				x.parentNode.insertBefore(s, x);
+			}
+			if (document.readyState === 'complete') {
+				l();
+			} else if (window.attachEvent) {
+				window.attachEvent('onload', l);
+			} else {
+				window.addEventListener('DOMContentLoaded', l, false);
+				window.addEventListener('load', l, false);
+			}
+		})();
+		/*
+		ChannelIO('boot', {
+			"pluginKey": "378cf6f4-3169-4a37-a85e-2e8b36cdab6a"
+		});
+		*/
+	</script>
+	<!-- End Channel Plugin -->
+
+	<!-- nam [s] -->
+	<style>
+		#pb-pc-submenu-list li:first-child {
+			display: none;
+		}
+
+		#pb-mobile-menu-panel>.menu-list>li:last-child {
+			display: none;
+		}
+
+		#pb-pc-submenu-list>li.locale-link:hover .submenu-group,
+		#pb-pc-submenu-list>li>.submenu-group>.submenu-list>li.change-locale-menu,
+		#pb-pc-submenu-list>li>.submenu-group>.submenu-list>li.change-locale-menu li {
+			display: block !important;
+			opacity: 1;
+		}
+
+		@media screen and (max-width: 767px) {
+			#pb-mobile-menu-panel {
+				padding-bottom: 140px;
+			}
+
+			.locale-selector.mobile {
+				width: 120px;
+				margin: 0 auto;
+			}
+		}
+	</style>
+	<!-- nam [e] -->
+
+</head>
+
+<body class="" oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
+
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WJR8W6Q" height="0" width="0"
+			style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+
+	<script>
+		var open_id = 1;
+		function popup_close(popup_id, idx) {
+			$('#' + popup_id).hide();
+			open_id += 1;
+			$(".main-body-frame").css("margin-top", "0");
+			popup_chk_2();
+		}
+		function popup_close_fix(popup_id, idx) {
+			let today = new Date();
+
+			let year = today.getFullYear(); // 년도
+			let month = today.getMonth() + 1;  // 월
+			let date = today.getDate();  // 날짜
+			let day = today.getDay();  // 요일
+			var dateString = year + '-' + month + '-' + date;
+
+			console.log(dateString);
+
+			//var dateString = '2023-10-16';
+
+			localStorage.setItem(popup_id, dateString);
+			$('#' + popup_id).hide();
+			open_id += 1;
+			popup_chk_2();
+		}
+
+		// 논스크롤 노출
+		function popup_chk(popup_id, idx) {
+			if (open_id == idx) {
+				if (!localStorage.getItem(popup_id)) {
+					$('#' + popup_id).show();
+				} else {
+					var chk_date = localStorage.getItem(popup_id);
+					let today = new Date();
+
+					let year = today.getFullYear(); // 년도
+					let month = today.getMonth() + 1;  // 월
+					let date = today.getDate();  // 날짜
+					let day = today.getDay();  // 요일
+					var dateString = year + '-' + month + '-' + date;
+
+					console.log(dateString);
+
+					//var dateString = '2023-10-16';
+					if (dateString != chk_date) {
+						localStorage.removeItem(popup_id);
+						$('#' + popup_id).show();
+					} else {
+						open_id += 1;
+						$('#' + popup_id).hide();
+					}
+				}
+			}
+		}
+
+		var scrollPosition = 0;
+
+		$(document).ready(function () {
+			scrollPosition = window.scrollY || document.documentElement.scrollTop;
+		});
+
+		// 스크롤 노출
+		function popup_chk_scroll(popup_id, idx) {
+			var nowPosition = window.scrollY || document.documentElement.scrollTop;
+			//if(scrollPosition == nowPosition || scrollPosition == 0){
+			if (scrollPosition == nowPosition || nowPosition == 0) {
+				return false;
+			}
+			if (open_id == idx) {
+				if (!localStorage.getItem(popup_id)) {
+					$('#' + popup_id + ".open-point-S").show();
+					$('#' + popup_id + ".open-point-S").removeClass("open-point-S");
+				} else {
+					var chk_date = localStorage.getItem(popup_id);
+					let today = new Date();
+
+					let year = today.getFullYear(); // 년도
+					let month = today.getMonth() + 1;  // 월
+					let date = today.getDate();  // 날짜
+					let day = today.getDay();  // 요일
+					var dateString = year + '-' + month + '-' + date;
+
+					console.log(dateString);
+
+					//var dateString = '2023-10-16';
+					if (dateString != chk_date) {
+						localStorage.removeItem(popup_id);
+						$('#' + popup_id + ".open-point-S").show();
+						$('#' + popup_id + ".open-point-S").removeClass("open-point-S");
+					} else {
+						open_id += 1;
+						$('#' + popup_id).hide();
+					}
+				}
+			}
+		}
+
+		// 모두 노출
+		function popup_chk_2() {
+			$(".popup-layer-area").each(function () {
+				var popup_id = $(this).attr("id");
+				var id_split = popup_id.split("_");
+				var idx = id_split[1];
+
+				if (open_id == idx) {
+
+					if (!localStorage.getItem(popup_id)) {
+						$('#' + popup_id).show();
+						return false;
+					} else {
+						var chk_date = localStorage.getItem(popup_id);
+						let today = new Date();
+
+						let year = today.getFullYear(); // 년도
+						let month = today.getMonth() + 1;  // 월
+						let date = today.getDate();  // 날짜
+						let day = today.getDay();  // 요일
+						var dateString = year + '-' + month + '-' + date;
+
+						console.log(dateString);
+
+						//var dateString = '2023-10-16';
+						if (dateString != chk_date) {
+							localStorage.removeItem(popup_id);
+							$('#' + popup_id).show();
+							return false;
+						} else {
+							open_id += 1;
+							$('#' + popup_id).hide();
+						}
+					}
+				}
+
+			});
+
+		}
+
+		// 띠배너 노출
+		function popup_chk_top(popup_id) {
+			if (!localStorage.getItem(popup_id)) {
+				$('#' + popup_id).show();
+			} else {
+				var chk_date = localStorage.getItem(popup_id);
+				let today = new Date();
+
+				let year = today.getFullYear(); // 년도
+				let month = today.getMonth() + 1;  // 월
+				let date = today.getDate();  // 날짜
+				let day = today.getDay();  // 요일
+				var dateString = year + '-' + month + '-' + date;
+
+				console.log(dateString);
+
+				//var dateString = '2023-10-16';
+				if (dateString != chk_date) {
+					localStorage.removeItem(popup_id);
+					$('#' + popup_id).show();
+				} else {
+					open_id += 1;
+					$('#' + popup_id).hide();
+				}
+			}
+		}
+	</script>
+
+	<div id="wrap" class="no_footer">
+		<header>
+			<div class="band-banner">
+				<div class="banner" style="background-color: #0A0A0A;">
+					<div class="banner_box">
+						<img src="/img/band_banner_img.png" alt="띠 배너 이미지">
+						<button type="button" class="btn_close"></button>
+					</div>
+				</div>
+				<!-- <div class="banner" style="background-color: #0A0A0A;">
+			          <div class="banner_box">
+			            <img src="/img/band_banner_img.png" alt="띠 배너 이미지">
+			            <button type="button" class="btn_close"></button>
+			          </div>
+			        </div> -->
+			</div>
+			<div class="header__inner">
+				<div class="hd__top">
+					<div class="hd-search">
+						<a href="/" class="logo">
+							<img src="../img/common/logo.svg" alt="커넥티드 로고">
+						</a>
+						<form action="" class="form_hd-search">
+							<fieldset>
+								<div class="search">
+									<input type="text" placeholder="검색어를 입력하세요.">
+									<button type="button" class="btn_search"></button>
+								</div>
+							</fieldset>
+						</form>
+						<button type="button" class="mo-icon_menu"></button>
+					</div>
+					<div class="hd-language">
+						<ul class="hd-navigation">
+							<li>
+								<div class="setting-lang">
+									<span class="current">KOR</span>
+									<button type="button" class="btn_open"></button>
+									<ul class="lang_list">
+										<li>KOR</li>
+										<li>ENG</li>
+										<li>CN</li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="hd__bottom">
+					<div class="hd_category_gnb">
+						<div class="category">
+							<div class="category_icon">
+								<span></span><span></span><span></span><span></span>
+								<span></span><span></span><span></span><span></span><span></span>
+							</div>
+							<p>전체 카테고리</p>
+							<button type="button" class="btn_open"></button>
+						</div>
+						<nav id="gnb">
+							<ul>
+								<!-- 해당 메뉴 접근시 li에 active 클래스 추가 -->
+								<li><a href="./school/school_home.html">학교</a></li>
+								<li><a href="./school/online_home.html">온라인학교</a></li>
+								<li><a href="./activity/short_home.html">단기활동</a></li>
+								<li><a href="./activity/online_home.html">온라인 단기활동</a></li>
+								<li><a href="./magazine/list.html">매거진</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="hd_login">
+						<!-- 비로그인 환경 -->
+						<!-- <a href="/login.html" class="btn_login">로그인</a>
+			                <a href="#" class="btn-smType btn-round btn_signup">회원가입</a> -->
+						<!-- 로그인 환경 -->
+						<div class="hd_mypage">
+							<button type="button" class="btn-smType btn-round btn_mypage">마이페이지</button>
+							<ul class="mypage_list">
+								<li><a href="#" class="my_info">계정 정보</a></li>
+								<li><a href="#" class="my_noti">알림</a></li>
+								<li><a href="#" class="my_like">관심리스트</a></li>
+								<li><a href="#" class="my_portfolio">포트폴리오</a></li>
+								<li><a href="#" class="my_payment">결제내역</a></li>
+								<li><a href="#" class="my_aplc">지원서 리스트</a></li>
+								<li><a href="#" class="logout">로그아웃</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 전체 카테고리 -->
+			<div id="hd_category">
+				<div class="category__inner">
+					<ul class="category">
+						<li>
+							<span class="category_nm">학교</span>
+							<ul class="category_sub">
+								<li>
+									<a href="#" class="category_nm">미국</a>
+									<ul class="category_sub">
+										<li><a href="#" class="category_nm">미국</a></li>
+										<li><a href="#" class="category_nm">영국</a></li>
+										<li><a href="#" class="category_nm">캐나다</a></li>
+									</ul>
+								</li>
+								<li><a href="#" class="category_nm">영국</a></li>
+								<li><a href="#" class="category_nm">캐나다</a></li>
+							</ul>
+						</li>
+						<li><span class="category_nm">온라인학교</span>
+							<ul class="category_sub">
+								<li>
+									<a href="#" class="category_nm">미국1</a>
+									<ul class="category_sub">
+										<li><a href="#" class="category_nm">미국</a></li>
+										<li><a href="#" class="category_nm">영국</a></li>
+										<li><a href="#" class="category_nm">캐나다</a></li>
+									</ul>
+								</li>
+								<li><a href="#" class="category_nm">영국</a></li>
+								<li><a href="#" class="category_nm">캐나다</a></li>
+							</ul>
+						</li>
+						<li><span class="category_nm">단기활동</span>
+							<ul class="category_sub">
+								<li>
+									<a href="#" class="category_nm">미국2</a>
+									<ul class="category_sub">
+										<li><a href="#" class="category_nm">미국</a></li>
+										<li><a href="#" class="category_nm">영국</a></li>
+										<li><a href="#" class="category_nm">캐나다</a></li>
+									</ul>
+								</li>
+								<li><a href="#" class="category_nm">영국</a></li>
+								<li><a href="#" class="category_nm">캐나다</a></li>
+							</ul>
+						</li>
+						<li><span class="category_nm">온라인 단기활동</span></li>
+						<li><span class="category_nm">매거진</span></li>
+					</ul>
+				</div>
+			</div>
+			<!-- 모바일 햄버거 버튼 클릭 메뉴 -->
+			<div class="mobile_gnb">
+				<div class="mobile_gnb__inner">
+					<div class="mobile_gnb__header">
+						<div class="logo">
+							<img src="./img/common/logo.svg" alt="로고">
+						</div>
+						<button type="button" class="btn_close"></button>
+					</div>
+					<div class="mobile_gnb__content">
+						<!-- 로그인 전 로그인 유도 -->
+						<div class="m_gnb-login">
+							<span>
+								로그인 하시고<br>
+								더 자세한 정보를 확인하세요!
+							</span>
+							<a href="/login.html" class="btn_login">로그인</a>
+						</div>
+						<ul class="m-gnb">
+							<!-- 로그인 후 마이페이지 노출 -->
+							<li>
+								<button type="button" class="a_menu mypage">마이페이지</button>
+							</li>
+							<li>
+								<a href="./school/school_home.html" class="a_menu">학교</a>
+							</li>
+							<li>
+								<a href="./school/online_home.html" class="a_menu">온라인학교</a>
+							</li>
+							<li>
+								<a href="./activity/short_home.html" class="a_menu">단기활동</a>
+							</li>
+							<li>
+								<a href="./activity/online_home.html" class="a_menu">온라인 단기활동</a>
+							</li>
+							<li>
+								<a href="./magazine/list.html" class="a_menu">매거진</a>
+							</li>
+						</ul>
+					</div>
+					<div class="mobile_gnb__mypage">
+						<div class="gnb_mypage__inner">
+							<button type="button" class="btn_revert">전체</button>
+							<ul class="mypage__menu">
+								<li><a href="#" class="my_info">계정 정보</a></li>
+								<li><a href="#" class="my_noti">알림</a></li>
+								<li><a href="#" class="my_like">관심리스트</a></li>
+								<li><a href="#" class="my_portfolio">포트폴리오</a></li>
+								<li><a href="#" class="my_payment">결제내역</a></li>
+								<li><a href="#" class="my_aplc">지원서 리스트</a></li>
+								<li><a href="#" class="logout">로그아웃</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<script type="text/javascript">
+			jQuery(document).ready(function ($) {
+				// $("#pb-header-search-group").pb_header_search_group();
+			});
+		</script>
+
+		<link rel="stylesheet" href="/html/css/fonts.css?20231016100026">
+		<link rel="stylesheet" href="/html/css/style.css?20231016100026">
+		<script src="/html/js/js.js?20231016100026"></script>
+
+
+		<div class="main-body-frame">
+			<style type="text/css">
+				.pb-element-class-gby0akmpn3 {
+					padding-top: 0 !important;
+					padding-bottom: 0 !important;
+				}
+
+				.pb-element-class-dasl573pim {
+					margin-top: 0 !important;
+					margin-bottom: 0 !important;
+					padding-top: 30 !important;
+					padding-bottom: 30 !important;
+				}
+
+				.pb-element-class-xx5nr8tfpy {
+					margin-top: 0 !important;
+					margin-bottom: 0 !important;
+					padding-top: 30 !important;
+					padding-bottom: 30 !important;
+				}
+
+				.pb-element-class-1rnaypzik4 {
+					margin-top: 0 !important;
+					margin-bottom: 0 !important;
+					padding-top: 30 !important;
+					padding-bottom: 30 !important;
+				}
+
+				.pb-element-class-zrdhefohlj {
+					padding-top: 0 !important;
+					padding-bottom: 0 !important;
+				}
+
+				.pb-element-class-w9g37jgtyu {
+					margin-top: 0 !important;
+					margin-bottom: 0 !important;
+					padding-top: 0 !important;
+					padding-bottom: 0 !important;
+					background-color: #2b3db0;
+				}
+
+				.pb-element-class-1ytpr5quyz {
+					padding-top: 0 !important;
+					padding-bottom: 0 !important;
+				}
+
+				.pb-element-class-z6nk24i2s8 {
+					padding-top: 0 !important;
+					padding-bottom: 0 !important;
+				}
+
+				.pb-element-class-okkdik98mr {
+					padding-top: 0 !important;
+					padding-bottom: 0 !important;
+				}
+
+				.pb-element-class-hph31i4e0m {
+					padding-top: 0 !important;
+					padding-bottom: 0 !important;
+					background-color: #fffce2;
+				}
+			</style>
+		</div>
+
+		<main>
+			<div class="main-container">
+				<div class="more-list__inner">
+					<div class="more-list">
+						<div class="more-list__header">
+							<span><b>15</b> 개의 학교 검색</span>
+							<div class="list_sort">
+								<select id="select" class="custom-select select-primary">
+									<option value="">추천순</option>
+									<option value="">조회 많은순</option>
+									<option value="">학비 높은순</option>
+									<option value="">학비 낮은순</option>
+									<option value="">AP수업 많은순</option>
+									<option value="">최신순</option>
+									<option value="">오래된순</option>
+									<option value="">참가비 높은순</option>
+									<option value="">참가비 낮은순</option>
+								</select>
+								<!-- 모바일 셀렉트 박스 -->
+								<div class="mobile-select_box w100p" onclick="clickMobileSelect('modal-select-choose')">
+									<!-- 셀렉트박스 제일 상단 옵션 -->
+									<button type="button" id="select_option">추천순</button>
+								</div>
+								<button type="button" class="btn_filter"><span>필터</span></button>
+							</div>
+						</div>
+						<div class="product__list list-more" data-scrollbar>
+							<div class="product__item">
+								<div class="school-card-item small">
+									<div class="content">
+										<div class="btn_like_box">
+											<input type="checkbox" id="btn_like5" />
+											<label for="btn_like5">
+												<svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+													<g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+														<path
+															d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+															stroke="#fff" stroke-width="2" id="heart" fill="transparent" />
+														<circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+													</g>
+												</svg>
+											</label>
+										</div>
+										<div class="card_front">
+											<button class="partners">
+												<em>교육기관이 직접 제공한 데이터입니다</em>
+											</button>
+											<a href="./detail.html" class="thum">
+												<em class="grade">A+</em>
+												<img src="./img/item_thum05.png" alt="썸네일 이미지">
+												<div class="badge_list">
+													<!-- 마감임박 : pink -->
+													<span class="badge pink">마감임박</span>
+												</div>
+											</a>
+											<div class="desc">
+												<p class="star_loc">
+													<span class="star">4.0(1,200)</span>
+													<span class="loc">미국 뉴 저지</span>
+												</p>
+												<h3 class="title">Blair Academy</h3>
+												<p class="price">900 USD/Credit ~</p>
+											</div>
+										</div>
+										<a href="./detail.html" class="card_back">
+											<div class="btn_like_hover">
+												<span>관심리스트 추가</span>
+											</div>
+											<div class="back_title">
+												<span class="loc">뉴질랜드 오클랜드</span>
+												<h3 class="title">뉴질랜드 스쿨링 영어캠프 2023</h3>
+												<span class="hashtag">#기숙 #통학</span>
+											</div>
+											<p class="price">NZD - $ 2,000 ~</p>
+											<em class="grade">A+</em>
+											<span class="partners"></span>
+											<div class="back_end">
+												<span class="name">JEC CAMP</span>
+												<small>교육기관이 직접 제공한 데이터입니다</small>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="product__item">
+								<div class="school-card-item small">
+									<div class="content">
+										<div class="btn_like_box">
+											<input type="checkbox" id="btn_like5" />
+											<label for="btn_like5">
+												<svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+													<g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+														<path
+															d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+															stroke="#fff" stroke-width="2" id="heart" fill="transparent" />
+														<circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+													</g>
+												</svg>
+											</label>
+										</div>
+										<div class="card_front">
+											<button class="partners">
+												<em>교육기관이 직접 제공한 데이터입니다</em>
+											</button>
+											<a href="./detail.html" class="thum">
+												<em class="grade">A+</em>
+												<img src="./img/item_thum05.png" alt="썸네일 이미지">
+												<div class="badge_list">
+													<!-- 마감임박 : pink -->
+													<span class="badge pink">마감임박</span>
+												</div>
+											</a>
+											<div class="desc">
+												<p class="star_loc">
+													<span class="star">4.0(1,200)</span>
+													<span class="loc">미국 뉴 저지</span>
+												</p>
+												<h3 class="title">Blair Academy</h3>
+												<p class="price">900 USD/Credit ~</p>
+											</div>
+										</div>
+										<a href="./detail.html" class="card_back">
+											<div class="btn_like_hover">
+												<span>관심리스트 추가</span>
+											</div>
+											<div class="back_title">
+												<span class="loc">뉴질랜드 오클랜드</span>
+												<h3 class="title">뉴질랜드 스쿨링 영어캠프 2023</h3>
+												<span class="hashtag">#기숙 #통학</span>
+											</div>
+											<p class="price">NZD - $ 2,000 ~</p>
+											<em class="grade">A+</em>
+											<span class="partners"></span>
+											<div class="back_end">
+												<span class="name">JEC CAMP</span>
+												<small>교육기관이 직접 제공한 데이터입니다</small>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="product__item">
+								<div class="school-card-item small">
+									<div class="content">
+										<div class="btn_like_box">
+											<input type="checkbox" id="btn_like5" />
+											<label for="btn_like5">
+												<svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+													<g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+														<path
+															d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+															stroke="#fff" stroke-width="2" id="heart" fill="transparent" />
+														<circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+													</g>
+												</svg>
+											</label>
+										</div>
+										<div class="card_front">
+											<button class="partners">
+												<em>교육기관이 직접 제공한 데이터입니다</em>
+											</button>
+											<a href="./detail.html" class="thum">
+												<em class="grade">A+</em>
+												<img src="./img/item_thum05.png" alt="썸네일 이미지">
+												<div class="badge_list">
+													<!-- 마감임박 : pink -->
+													<span class="badge pink">마감임박</span>
+												</div>
+											</a>
+											<div class="desc">
+												<p class="star_loc">
+													<span class="star">4.0(1,200)</span>
+													<span class="loc">미국 뉴 저지</span>
+												</p>
+												<h3 class="title">Blair Academy</h3>
+												<p class="price">900 USD/Credit ~</p>
+											</div>
+										</div>
+										<a href="./detail.html" class="card_back">
+											<div class="btn_like_hover">
+												<span>관심리스트 추가</span>
+											</div>
+											<div class="back_title">
+												<span class="loc">뉴질랜드 오클랜드</span>
+												<h3 class="title">뉴질랜드 스쿨링 영어캠프 2023</h3>
+												<span class="hashtag">#기숙 #통학</span>
+											</div>
+											<p class="price">NZD - $ 2,000 ~</p>
+											<em class="grade">A+</em>
+											<span class="partners"></span>
+											<div class="back_end">
+												<span class="name">JEC CAMP</span>
+												<small>교육기관이 직접 제공한 데이터입니다</small>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="product__item">
+								<div class="school-card-item small">
+									<div class="content">
+										<div class="btn_like_box">
+											<input type="checkbox" id="btn_like5" />
+											<label for="btn_like5">
+												<svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+													<g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+														<path
+															d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+															stroke="#fff" stroke-width="2" id="heart" fill="transparent" />
+														<circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+													</g>
+												</svg>
+											</label>
+										</div>
+										<div class="card_front">
+											<button class="partners">
+												<em>교육기관이 직접 제공한 데이터입니다</em>
+											</button>
+											<a href="./detail.html" class="thum">
+												<em class="grade">A+</em>
+												<img src="./img/item_thum05.png" alt="썸네일 이미지">
+												<div class="badge_list">
+													<!-- 마감임박 : pink -->
+													<span class="badge pink">마감임박</span>
+												</div>
+											</a>
+											<div class="desc">
+												<p class="star_loc">
+													<span class="star">4.0(1,200)</span>
+													<span class="loc">미국 뉴 저지</span>
+												</p>
+												<h3 class="title">Blair Academy</h3>
+												<p class="price">900 USD/Credit ~</p>
+											</div>
+										</div>
+										<a href="./detail.html" class="card_back">
+											<div class="btn_like_hover">
+												<span>관심리스트 추가</span>
+											</div>
+											<div class="back_title">
+												<span class="loc">뉴질랜드 오클랜드</span>
+												<h3 class="title">뉴질랜드 스쿨링 영어캠프 2023</h3>
+												<span class="hashtag">#기숙 #통학</span>
+											</div>
+											<p class="price">NZD - $ 2,000 ~</p>
+											<em class="grade">A+</em>
+											<span class="partners"></span>
+											<div class="back_end">
+												<span class="name">JEC CAMP</span>
+												<small>교육기관이 직접 제공한 데이터입니다</small>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="product__item">
+								<div class="school-card-item small">
+									<div class="content">
+										<div class="btn_like_box">
+											<input type="checkbox" id="btn_like5" />
+											<label for="btn_like5">
+												<svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+													<g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+														<path
+															d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+															stroke="#fff" stroke-width="2" id="heart" fill="transparent" />
+														<circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+													</g>
+												</svg>
+											</label>
+										</div>
+										<div class="card_front">
+											<button class="partners">
+												<em>교육기관이 직접 제공한 데이터입니다</em>
+											</button>
+											<a href="./detail.html" class="thum">
+												<em class="grade">A+</em>
+												<img src="./img/item_thum05.png" alt="썸네일 이미지">
+												<div class="badge_list">
+													<!-- 마감임박 : pink -->
+													<span class="badge pink">마감임박</span>
+												</div>
+											</a>
+											<div class="desc">
+												<p class="star_loc">
+													<span class="star">4.0(1,200)</span>
+													<span class="loc">미국 뉴 저지</span>
+												</p>
+												<h3 class="title">Blair Academy</h3>
+												<p class="price">900 USD/Credit ~</p>
+											</div>
+										</div>
+										<a href="./detail.html" class="card_back">
+											<div class="btn_like_hover">
+												<span>관심리스트 추가</span>
+											</div>
+											<div class="back_title">
+												<span class="loc">뉴질랜드 오클랜드</span>
+												<h3 class="title">뉴질랜드 스쿨링 영어캠프 2023</h3>
+												<span class="hashtag">#기숙 #통학</span>
+											</div>
+											<p class="price">NZD - $ 2,000 ~</p>
+											<em class="grade">A+</em>
+											<span class="partners"></span>
+											<div class="back_end">
+												<span class="name">JEC CAMP</span>
+												<small>교육기관이 직접 제공한 데이터입니다</small>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="product__item">
+								<div class="school-card-item small">
+									<div class="content">
+										<div class="btn_like_box">
+											<input type="checkbox" id="btn_like5" />
+											<label for="btn_like5">
+												<svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+													<g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+														<path
+															d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+															stroke="#fff" stroke-width="2" id="heart" fill="transparent" />
+														<circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+													</g>
+												</svg>
+											</label>
+										</div>
+										<div class="card_front">
+											<button class="partners">
+												<em>교육기관이 직접 제공한 데이터입니다</em>
+											</button>
+											<a href="./detail.html" class="thum">
+												<em class="grade">A+</em>
+												<img src="./img/item_thum05.png" alt="썸네일 이미지">
+												<div class="badge_list">
+													<!-- 마감임박 : pink -->
+													<span class="badge pink">마감임박</span>
+												</div>
+											</a>
+											<div class="desc">
+												<p class="star_loc">
+													<span class="star">4.0(1,200)</span>
+													<span class="loc">미국 뉴 저지</span>
+												</p>
+												<h3 class="title">Blair Academy</h3>
+												<p class="price">900 USD/Credit ~</p>
+											</div>
+										</div>
+										<a href="./detail.html" class="card_back">
+											<div class="btn_like_hover">
+												<span>관심리스트 추가</span>
+											</div>
+											<div class="back_title">
+												<span class="loc">뉴질랜드 오클랜드</span>
+												<h3 class="title">뉴질랜드 스쿨링 영어캠프 2023</h3>
+												<span class="hashtag">#기숙 #통학</span>
+											</div>
+											<p class="price">NZD - $ 2,000 ~</p>
+											<em class="grade">A+</em>
+											<span class="partners"></span>
+											<div class="back_end">
+												<span class="name">JEC CAMP</span>
+												<small>교육기관이 직접 제공한 데이터입니다</small>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="product__item">
+								<div class="school-card-item small">
+									<div class="content">
+										<div class="btn_like_box">
+											<input type="checkbox" id="btn_like5" />
+											<label for="btn_like5">
+												<svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+													<g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+														<path
+															d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+															stroke="#fff" stroke-width="2" id="heart" fill="transparent" />
+														<circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+													</g>
+												</svg>
+											</label>
+										</div>
+										<div class="card_front">
+											<button class="partners">
+												<em>교육기관이 직접 제공한 데이터입니다</em>
+											</button>
+											<a href="./detail.html" class="thum">
+												<em class="grade">A+</em>
+												<img src="./img/item_thum05.png" alt="썸네일 이미지">
+												<div class="badge_list">
+													<!-- 마감임박 : pink -->
+													<span class="badge pink">마감임박</span>
+												</div>
+											</a>
+											<div class="desc">
+												<p class="star_loc">
+													<span class="star">4.0(1,200)</span>
+													<span class="loc">미국 뉴 저지</span>
+												</p>
+												<h3 class="title">Blair Academy</h3>
+												<p class="price">900 USD/Credit ~</p>
+											</div>
+										</div>
+										<a href="./detail.html" class="card_back">
+											<div class="btn_like_hover">
+												<span>관심리스트 추가</span>
+											</div>
+											<div class="back_title">
+												<span class="loc">뉴질랜드 오클랜드</span>
+												<h3 class="title">뉴질랜드 스쿨링 영어캠프 2023</h3>
+												<span class="hashtag">#기숙 #통학</span>
+											</div>
+											<p class="price">NZD - $ 2,000 ~</p>
+											<em class="grade">A+</em>
+											<span class="partners"></span>
+											<div class="back_end">
+												<span class="name">JEC CAMP</span>
+												<small>교육기관이 직접 제공한 데이터입니다</small>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="product__item">
+								<div class="school-card-item small">
+									<div class="content">
+										<div class="btn_like_box">
+											<input type="checkbox" id="btn_like5" />
+											<label for="btn_like5">
+												<svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+													<g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+														<path
+															d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+															stroke="#fff" stroke-width="2" id="heart" fill="transparent" />
+														<circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+													</g>
+												</svg>
+											</label>
+										</div>
+										<div class="card_front">
+											<button class="partners">
+												<em>교육기관이 직접 제공한 데이터입니다</em>
+											</button>
+											<a href="./detail.html" class="thum">
+												<em class="grade">A+</em>
+												<img src="./img/item_thum05.png" alt="썸네일 이미지">
+												<div class="badge_list">
+													<!-- 마감임박 : pink -->
+													<span class="badge pink">마감임박</span>
+												</div>
+											</a>
+											<div class="desc">
+												<p class="star_loc">
+													<span class="star">4.0(1,200)</span>
+													<span class="loc">미국 뉴 저지</span>
+												</p>
+												<h3 class="title">Blair Academy</h3>
+												<p class="price">900 USD/Credit ~</p>
+											</div>
+										</div>
+										<a href="./detail.html" class="card_back">
+											<div class="btn_like_hover">
+												<span>관심리스트 추가</span>
+											</div>
+											<div class="back_title">
+												<span class="loc">뉴질랜드 오클랜드</span>
+												<h3 class="title">뉴질랜드 스쿨링 영어캠프 2023</h3>
+												<span class="hashtag">#기숙 #통학</span>
+											</div>
+											<p class="price">NZD - $ 2,000 ~</p>
+											<em class="grade">A+</em>
+											<span class="partners"></span>
+											<div class="back_end">
+												<span class="name">JEC CAMP</span>
+												<small>교육기관이 직접 제공한 데이터입니다</small>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="product__item">
+								<div class="school-card-item small">
+									<div class="content">
+										<div class="btn_like_box">
+											<input type="checkbox" id="btn_like5" />
+											<label for="btn_like5">
+												<svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+													<g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+														<path
+															d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+															stroke="#fff" stroke-width="2" id="heart" fill="transparent" />
+														<circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+													</g>
+												</svg>
+											</label>
+										</div>
+										<div class="card_front">
+											<button class="partners">
+												<em>교육기관이 직접 제공한 데이터입니다</em>
+											</button>
+											<a href="./detail.html" class="thum">
+												<em class="grade">A+</em>
+												<img src="./img/item_thum05.png" alt="썸네일 이미지">
+												<div class="badge_list">
+													<!-- 마감임박 : pink -->
+													<span class="badge pink">마감임박</span>
+												</div>
+											</a>
+											<div class="desc">
+												<p class="star_loc">
+													<span class="star">4.0(1,200)</span>
+													<span class="loc">미국 뉴 저지</span>
+												</p>
+												<h3 class="title">Blair Academy</h3>
+												<p class="price">900 USD/Credit ~</p>
+											</div>
+										</div>
+										<a href="./detail.html" class="card_back">
+											<div class="btn_like_hover">
+												<span>관심리스트 추가</span>
+											</div>
+											<div class="back_title">
+												<span class="loc">뉴질랜드 오클랜드</span>
+												<h3 class="title">뉴질랜드 스쿨링 영어캠프 2023</h3>
+												<span class="hashtag">#기숙 #통학</span>
+											</div>
+											<p class="price">NZD - $ 2,000 ~</p>
+											<em class="grade">A+</em>
+											<span class="partners"></span>
+											<div class="back_end">
+												<span class="name">JEC CAMP</span>
+												<small>교육기관이 직접 제공한 데이터입니다</small>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="product__item">
+								<div class="school-card-item small">
+									<div class="content">
+										<div class="btn_like_box">
+											<input type="checkbox" id="btn_like5" />
+											<label for="btn_like5">
+												<svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+													<g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+														<path
+															d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+															stroke="#fff" stroke-width="2" id="heart" fill="transparent" />
+														<circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+													</g>
+												</svg>
+											</label>
+										</div>
+										<div class="card_front">
+											<button class="partners">
+												<em>교육기관이 직접 제공한 데이터입니다</em>
+											</button>
+											<a href="./detail.html" class="thum">
+												<em class="grade">A+</em>
+												<img src="./img/item_thum05.png" alt="썸네일 이미지">
+												<div class="badge_list">
+													<!-- 마감임박 : pink -->
+													<span class="badge pink">마감임박</span>
+												</div>
+											</a>
+											<div class="desc">
+												<p class="star_loc">
+													<span class="star">4.0(1,200)</span>
+													<span class="loc">미국 뉴 저지</span>
+												</p>
+												<h3 class="title">Blair Academy</h3>
+												<p class="price">900 USD/Credit ~</p>
+											</div>
+										</div>
+										<a href="./detail.html" class="card_back">
+											<div class="btn_like_hover">
+												<span>관심리스트 추가</span>
+											</div>
+											<div class="back_title">
+												<span class="loc">뉴질랜드 오클랜드</span>
+												<h3 class="title">뉴질랜드 스쿨링 영어캠프 2023</h3>
+												<span class="hashtag">#기숙 #통학</span>
+											</div>
+											<p class="price">NZD - $ 2,000 ~</p>
+											<em class="grade">A+</em>
+											<span class="partners"></span>
+											<div class="back_end">
+												<span class="name">JEC CAMP</span>
+												<small>교육기관이 직접 제공한 데이터입니다</small>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="product__item">
+								<div class="school-card-item small">
+									<div class="content">
+										<div class="btn_like_box">
+											<input type="checkbox" id="btn_like5" />
+											<label for="btn_like5">
+												<svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+													<g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+														<path
+															d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+															stroke="#fff" stroke-width="2" id="heart" fill="transparent" />
+														<circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+													</g>
+												</svg>
+											</label>
+										</div>
+										<div class="card_front">
+											<button class="partners">
+												<em>교육기관이 직접 제공한 데이터입니다</em>
+											</button>
+											<a href="./detail.html" class="thum">
+												<em class="grade">A+</em>
+												<img src="./img/item_thum05.png" alt="썸네일 이미지">
+												<div class="badge_list">
+													<!-- 마감임박 : pink -->
+													<span class="badge pink">마감임박</span>
+												</div>
+											</a>
+											<div class="desc">
+												<p class="star_loc">
+													<span class="star">4.0(1,200)</span>
+													<span class="loc">미국 뉴 저지</span>
+												</p>
+												<h3 class="title">Blair Academy</h3>
+												<p class="price">900 USD/Credit ~</p>
+											</div>
+										</div>
+										<a href="./detail.html" class="card_back">
+											<div class="btn_like_hover">
+												<span>관심리스트 추가</span>
+											</div>
+											<div class="back_title">
+												<span class="loc">뉴질랜드 오클랜드</span>
+												<h3 class="title">뉴질랜드 스쿨링 영어캠프 2023</h3>
+												<span class="hashtag">#기숙 #통학</span>
+											</div>
+											<p class="price">NZD - $ 2,000 ~</p>
+											<em class="grade">A+</em>
+											<span class="partners"></span>
+											<div class="back_end">
+												<span class="name">JEC CAMP</span>
+												<small>교육기관이 직접 제공한 데이터입니다</small>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="product__item">
+								<div class="school-card-item small">
+									<div class="content">
+										<div class="btn_like_box">
+											<input type="checkbox" id="btn_like5" />
+											<label for="btn_like5">
+												<svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+													<g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+														<path
+															d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+															stroke="#fff" stroke-width="2" id="heart" fill="transparent" />
+														<circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+													</g>
+												</svg>
+											</label>
+										</div>
+										<div class="card_front">
+											<button class="partners">
+												<em>교육기관이 직접 제공한 데이터입니다</em>
+											</button>
+											<a href="./detail.html" class="thum">
+												<em class="grade">A+</em>
+												<img src="./img/item_thum05.png" alt="썸네일 이미지">
+												<div class="badge_list">
+													<!-- 마감임박 : pink -->
+													<span class="badge pink">마감임박</span>
+												</div>
+											</a>
+											<div class="desc">
+												<p class="star_loc">
+													<span class="star">4.0(1,200)</span>
+													<span class="loc">미국 뉴 저지</span>
+												</p>
+												<h3 class="title">Blair Academy</h3>
+												<p class="price">900 USD/Credit ~</p>
+											</div>
+										</div>
+										<a href="./detail.html" class="card_back">
+											<div class="btn_like_hover">
+												<span>관심리스트 추가</span>
+											</div>
+											<div class="back_title">
+												<span class="loc">뉴질랜드 오클랜드</span>
+												<h3 class="title">뉴질랜드 스쿨링 영어캠프 2023</h3>
+												<span class="hashtag">#기숙 #통학</span>
+											</div>
+											<p class="price">NZD - $ 2,000 ~</p>
+											<em class="grade">A+</em>
+											<span class="partners"></span>
+											<div class="back_end">
+												<span class="name">JEC CAMP</span>
+												<small>교육기관이 직접 제공한 데이터입니다</small>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="product__item">
+								<div class="school-card-item small">
+									<div class="content">
+										<div class="btn_like_box">
+											<input type="checkbox" id="btn_like5" />
+											<label for="btn_like5">
+												<svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+													<g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+														<path
+															d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+															stroke="#fff" stroke-width="2" id="heart" fill="transparent" />
+														<circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+													</g>
+												</svg>
+											</label>
+										</div>
+										<div class="card_front">
+											<button class="partners">
+												<em>교육기관이 직접 제공한 데이터입니다</em>
+											</button>
+											<a href="./detail.html" class="thum">
+												<em class="grade">A+</em>
+												<img src="./img/item_thum05.png" alt="썸네일 이미지">
+												<div class="badge_list">
+													<!-- 마감임박 : pink -->
+													<span class="badge pink">마감임박</span>
+												</div>
+											</a>
+											<div class="desc">
+												<p class="star_loc">
+													<span class="star">4.0(1,200)</span>
+													<span class="loc">미국 뉴 저지</span>
+												</p>
+												<h3 class="title">Blair Academy</h3>
+												<p class="price">900 USD/Credit ~</p>
+											</div>
+										</div>
+										<a href="./detail.html" class="card_back">
+											<div class="btn_like_hover">
+												<span>관심리스트 추가</span>
+											</div>
+											<div class="back_title">
+												<span class="loc">뉴질랜드 오클랜드</span>
+												<h3 class="title">뉴질랜드 스쿨링 영어캠프 2023</h3>
+												<span class="hashtag">#기숙 #통학</span>
+											</div>
+											<p class="price">NZD - $ 2,000 ~</p>
+											<em class="grade">A+</em>
+											<span class="partners"></span>
+											<div class="back_end">
+												<span class="name">JEC CAMP</span>
+												<small>교육기관이 직접 제공한 데이터입니다</small>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="product__item">
+								<div class="school-card-item small">
+									<div class="content">
+										<div class="btn_like_box">
+											<input type="checkbox" id="btn_like5" />
+											<label for="btn_like5">
+												<svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+													<g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+														<path
+															d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+															stroke="#fff" stroke-width="2" id="heart" fill="transparent" />
+														<circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+													</g>
+												</svg>
+											</label>
+										</div>
+										<div class="card_front">
+											<button class="partners">
+												<em>교육기관이 직접 제공한 데이터입니다</em>
+											</button>
+											<a href="./detail.html" class="thum">
+												<em class="grade">A+</em>
+												<img src="./img/item_thum05.png" alt="썸네일 이미지">
+												<div class="badge_list">
+													<!-- 마감임박 : pink -->
+													<span class="badge pink">마감임박</span>
+												</div>
+											</a>
+											<div class="desc">
+												<p class="star_loc">
+													<span class="star">4.0(1,200)</span>
+													<span class="loc">미국 뉴 저지</span>
+												</p>
+												<h3 class="title">Blair Academy</h3>
+												<p class="price">900 USD/Credit ~</p>
+											</div>
+										</div>
+										<a href="./detail.html" class="card_back">
+											<div class="btn_like_hover">
+												<span>관심리스트 추가</span>
+											</div>
+											<div class="back_title">
+												<span class="loc">뉴질랜드 오클랜드</span>
+												<h3 class="title">뉴질랜드 스쿨링 영어캠프 2023</h3>
+												<span class="hashtag">#기숙 #통학</span>
+											</div>
+											<p class="price">NZD - $ 2,000 ~</p>
+											<em class="grade">A+</em>
+											<span class="partners"></span>
+											<div class="back_end">
+												<span class="name">JEC CAMP</span>
+												<small>교육기관이 직접 제공한 데이터입니다</small>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="product__item">
+								<div class="school-card-item small">
+									<div class="content">
+										<div class="btn_like_box">
+											<input type="checkbox" id="btn_like5" />
+											<label for="btn_like5">
+												<svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+													<g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+														<path
+															d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+															stroke="#fff" stroke-width="2" id="heart" fill="transparent" />
+														<circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+													</g>
+												</svg>
+											</label>
+										</div>
+										<div class="card_front">
+											<button class="partners">
+												<em>교육기관이 직접 제공한 데이터입니다</em>
+											</button>
+											<a href="./detail.html" class="thum">
+												<em class="grade">A+</em>
+												<img src="./img/item_thum05.png" alt="썸네일 이미지">
+												<div class="badge_list">
+													<!-- 마감임박 : pink -->
+													<span class="badge pink">마감임박</span>
+												</div>
+											</a>
+											<div class="desc">
+												<p class="star_loc">
+													<span class="star">4.0(1,200)</span>
+													<span class="loc">미국 뉴 저지</span>
+												</p>
+												<h3 class="title">Blair Academy</h3>
+												<p class="price">900 USD/Credit ~</p>
+											</div>
+										</div>
+										<a href="./detail.html" class="card_back">
+											<div class="btn_like_hover">
+												<span>관심리스트 추가</span>
+											</div>
+											<div class="back_title">
+												<span class="loc">뉴질랜드 오클랜드</span>
+												<h3 class="title">뉴질랜드 스쿨링 영어캠프 2023</h3>
+												<span class="hashtag">#기숙 #통학</span>
+											</div>
+											<p class="price">NZD - $ 2,000 ~</p>
+											<em class="grade">A+</em>
+											<span class="partners"></span>
+											<div class="back_end">
+												<span class="name">JEC CAMP</span>
+												<small>교육기관이 직접 제공한 데이터입니다</small>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="product__item">
+								<div class="school-card-item small">
+									<div class="content">
+										<div class="btn_like_box">
+											<input type="checkbox" id="btn_like5" />
+											<label for="btn_like5">
+												<svg id="heart-svg" viewBox="467 392 58 57" xmlns="http://www.w3.org/2000/svg">
+													<g id="Group" fill="none" fill-rule="evenodd" transform="translate(467 392)">
+														<path
+															d="M29.144 20.773c-.063-.13-4.227-8.67-11.44-2.59C7.63 28.795 28.94 43.256 29.143 43.394c.204-.138 21.513-14.6 11.44-25.213-7.214-6.08-11.377 2.46-11.44 2.59z"
+															stroke="#fff" stroke-width="2" id="heart" fill="transparent" />
+														<circle id="main-circ" fill="#E2264D" opacity="0" cx="29.5" cy="29.5" r="1.5" />
+													</g>
+												</svg>
+											</label>
+										</div>
+										<div class="card_front">
+											<button class="partners">
+												<em>교육기관이 직접 제공한 데이터입니다</em>
+											</button>
+											<a href="./detail.html" class="thum">
+												<em class="grade">A+</em>
+												<img src="./img/item_thum05.png" alt="썸네일 이미지">
+												<div class="badge_list">
+													<!-- 마감임박 : pink -->
+													<span class="badge pink">마감임박</span>
+												</div>
+											</a>
+											<div class="desc">
+												<p class="star_loc">
+													<span class="star">4.0(1,200)</span>
+													<span class="loc">미국 뉴 저지</span>
+												</p>
+												<h3 class="title">Blair Academy</h3>
+												<p class="price">900 USD/Credit ~</p>
+											</div>
+										</div>
+										<a href="./detail.html" class="card_back">
+											<div class="btn_like_hover">
+												<span>관심리스트 추가</span>
+											</div>
+											<div class="back_title">
+												<span class="loc">뉴질랜드 오클랜드</span>
+												<h3 class="title">뉴질랜드 스쿨링 영어캠프 2023</h3>
+												<span class="hashtag">#기숙 #통학</span>
+											</div>
+											<p class="price">NZD - $ 2,000 ~</p>
+											<em class="grade">A+</em>
+											<span class="partners"></span>
+											<div class="back_end">
+												<span class="name">JEC CAMP</span>
+												<small>교육기관이 직접 제공한 데이터입니다</small>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="more_map"></div>
+				</div>
+				<div class="list_filter">
+					<div class="filter__inner">
+						<div class="filter__header">
+							<h2>필터</h2>
+							<button type="button" class="btn_close"></button>
+						</div>
+						<div class="filter__content" data-scrollbar>
+							<!-- 국가 & 지역 -->
+							<div class="f_item">
+								<div id="filter_country" class="title">
+									<span>국가 & 지역</span>
+									<button type="button" class="btn_open"></button>
+								</div>
+								<div class="cnts">
+									<select id="country" class="custom-select select-primary mb16" onchange="selectCountry(this)">
+										<option value="">국가를 선택해주세요.</option>
+										<option value="1">국가1</option>
+										<option value="2">국가2</option>
+									</select>
+									<select id="area" class="custom-select select-primary" onchange="selectArea(this)" disabled>
+										<option value="">지역을 선택해주세요.</option>
+										<option value="1">지역1</option>
+										<option value="2">지역2</option>
+									</select>
+									<!-- 모바일 셀렉트 박스 -->
+									<!-- disabled 클래스 : 비활성화 -->
+									<div class="mobile-select_box w100p mb16" onclick="clickMobileSelect('modal-select-choose1')">
+										<!-- 셀렉트박스 제일 상단 옵션 -->
+										<button type="button" id="select_option">국가를 선택해주세요.</button>
+									</div>
+									<!-- 모바일 셀렉트 박스 -->
+									<div class="mobile-select_box w100p disabled" onclick="clickMobileSelect('modal-select-choose2')">
+										<!-- 셀렉트박스 제일 상단 옵션 -->
+										<button type="button" id="select_option">지역을 선택해주세요.</button>
+									</div>
+								</div>
+							</div>
+							<!-- 분야 -->
+							<div class="f_item">
+								<div id="filter_category" class="title">
+									<span>분야</span>
+									<button type="button" class="btn_open"></button>
+								</div>
+								<div class="cnts">
+									<div class="swiper filter_swiper">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<div class="checkbox_area half">
+													<div class="checkbox--typeB">
+														<label for='category'>
+															<input type='checkbox' id='category' name="checkbox_category"><em></em> 일반
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='category1'>
+															<input type='checkbox' id='category1' name="checkbox_category"><em></em> 군사
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='category2'>
+															<input type='checkbox' id='category2' name="checkbox_category"><em></em> 디자인/미술
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='category3'>
+															<input type='checkbox' id='category3' name="checkbox_category"><em></em> 음악
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='category4'>
+															<input type='checkbox' id='category4' name="checkbox_category"><em></em> 스포츠
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='category5'>
+															<input type='checkbox' id='category5' name="checkbox_category"><em></em> 영재
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='category6'>
+															<input type='checkbox' id='category6' name="checkbox_category"><em></em> 수학/과학
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='category7'>
+															<input type='checkbox' id='category7' name="checkbox_category"><em></em> 대학입시대비
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='category8'>
+															<input type='checkbox' id='category8' name="checkbox_category"><em></em> 이공계
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='category9'>
+															<input type='checkbox' id='category9' name="checkbox_category"><em></em> 외국어
+														</label>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="checkbox_area half">
+													<div class="checkbox--typeB">
+														<label for='category10'>
+															<input type='checkbox' id='category10' name="checkbox_category"><em></em> 패션/뷰티
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='category11'>
+															<input type='checkbox' id='category11' name="checkbox_category"><em></em> 여행/관광
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='category12'>
+															<input type='checkbox' id='category12' name="checkbox_category"><em></em> 의학
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='category13'>
+															<input type='checkbox' id='category13' name="checkbox_category"><em></em> 신학
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='category14'>
+															<input type='checkbox' id='category14' name="checkbox_category"><em></em> 국제정치/외교
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='category15'>
+															<input type='checkbox' id='category15' name="checkbox_category"><em></em> 방송/미디어
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='category16'>
+															<input type='checkbox' id='category16' name="checkbox_category"><em></em> 요리
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='category17'>
+															<input type='checkbox' id='category17' name="checkbox_category"><em></em> 경영/경제
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='category18'>
+															<input type='checkbox' id='category18' name="checkbox_category"><em></em> 공연예술
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='category19'>
+															<input type='checkbox' id='category19' name="checkbox_category"><em></em> 기타
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="controls">
+											<div class="swiper-button-prev"></div>
+											<div class="swiper-pagination"></div>
+											<div class="swiper-button-next"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 커리큘럼 종류 -->
+							<div class="f_item">
+								<div id="filter_curriculum" class="title">
+									<span>커리큘럼 종류</span>
+									<button type="button" class="btn_open"></button>
+								</div>
+								<div class="cnts">
+									<div class="swiper filter_swiper">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<div class="checkbox_area">
+													<div class="checkbox--typeB">
+														<label for='curriculum'>
+															<input type='checkbox' id='curriculum' name="checkbox_curriculum"><em></em> National
+															standard curriculum
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='curriculum1'>
+															<input type='checkbox' id='curriculum1' name="checkbox_curriculum"><em></em> AP
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='curriculum2'>
+															<input type='checkbox' id='curriculum2' name="checkbox_curriculum"><em></em> IB
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='curriculum3'>
+															<input type='checkbox' id='curriculum3' name="checkbox_curriculum"><em></em> Honors
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='curriculum4'>
+															<input type='checkbox' id='curriculum4' name="checkbox_curriculum"><em></em> Dual-Credit
+														</label>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="checkbox_area">
+													<div class="checkbox--typeB">
+														<label for='curriculum'>
+															<input type='checkbox' id='curriculum' name="checkbox_curriculum"><em></em> A-level
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='curriculum'>
+															<input type='checkbox' id='curriculum' name="checkbox_curriculum"><em></em> GCSE
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='curriculum'>
+															<input type='checkbox' id='curriculum' name="checkbox_curriculum"><em></em> IGCSE
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='curriculum'>
+															<input type='checkbox' id='curriculum' name="checkbox_curriculum"><em></em> Foundation
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='curriculum'>
+															<input type='checkbox' id='curriculum' name="checkbox_curriculum"><em></em> 기타
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="controls">
+											<div class="swiper-button-prev"></div>
+											<div class="swiper-pagination"></div>
+											<div class="swiper-button-next"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 제공 AP수업 -->
+							<div class="f_item">
+								<div id="filter_ap" class="title">
+									<span>제공 AP수업</span>
+									<button type="button" class="btn_open"></button>
+								</div>
+								<div class="cnts">
+									<div class="swiper filter_swiper">
+										<div class="swiper-wrapper">
+											<div class="swiper-slide">
+												<div class="checkbox_area">
+													<div class="checkbox--typeB">
+														<label for='ap'>
+															<input type='checkbox' id='ap' name="checkbox_ap"><em></em> <span>AP Reaserch</span>
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='ap1'>
+															<input type='checkbox' id='ap1' name="checkbox_ap"><em></em> <span>AP Seminar</span>
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='ap2'>
+															<input type='checkbox' id='ap2' name="checkbox_ap"><em></em> <span>Art History</span>
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='ap3'>
+															<input type='checkbox' id='ap3' name="checkbox_ap"><em></em> <span> Biology</span>
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='ap4'>
+															<input type='checkbox' id='ap4' name="checkbox_ap"><em></em> <span>Calculus AB</span>
+														</label>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="checkbox_area">
+													<div class="checkbox--typeB">
+														<label for='ap5'>
+															<input type='checkbox' id='ap5' name="checkbox_ap"><em></em> <span>Chemistry</span>
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='ap6'>
+															<input type='checkbox' id='ap6' name="checkbox_ap"><em></em> <span>Chinese Language and
+																Culture</span>
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='ap7'>
+															<input type='checkbox' id='ap7' name="checkbox_ap"><em></em> <span>Computer Science
+																A</span>
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='ap8'>
+															<input type='checkbox' id='ap8' name="checkbox_ap"><em></em> <span>Computer Science
+																Principles</span>
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='ap9'>
+															<input type='checkbox' id='ap9' name="checkbox_ap"><em></em> <span>English Language and
+																Composition</span>
+														</label>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="checkbox_area">
+													<div class="checkbox--typeB">
+														<label for='ap5'>
+															<input type='checkbox' id='ap5' name="checkbox_ap"><em></em> <span>English Literature and
+																Composition</span>
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='ap6'>
+															<input type='checkbox' id='ap6' name="checkbox_ap"><em></em> <span>Environmental
+																Science</span>
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='ap7'>
+															<input type='checkbox' id='ap7' name="checkbox_ap"><em></em> <span>European History</span>
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='ap8'>
+															<input type='checkbox' id='ap8' name="checkbox_ap"><em></em> <span>French Language and
+																Culture</span>
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='ap9'>
+															<input type='checkbox' id='ap9' name="checkbox_ap"><em></em> <span>German Language and
+																Culture</span>
+														</label>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="checkbox_area">
+													<div class="checkbox--typeB">
+														<label for='ap5'>
+															<input type='checkbox' id='ap5' name="checkbox_ap"><em></em> <span>Government and
+																Politics(Comparative)</span>
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='ap6'>
+															<input type='checkbox' id='ap6' name="checkbox_ap"><em></em> <span>Government and
+																Politics(US)</span>
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='ap7'>
+															<input type='checkbox' id='ap7' name="checkbox_ap"><em></em> <span>Human Geography</span>
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='ap8'>
+															<input type='checkbox' id='ap8' name="checkbox_ap"><em></em> <span>Italian Language and
+																Culture</span>
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='ap9'>
+															<input type='checkbox' id='ap9' name="checkbox_ap"><em></em> <span>Japanese Language and
+																Culture</span>
+														</label>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="checkbox_area">
+													<div class="checkbox--typeB">
+														<label for='ap5'>
+															<input type='checkbox' id='ap5' name="checkbox_ap"><em></em> <span>Latin</span>
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='ap6'>
+															<input type='checkbox' id='ap6' name="checkbox_ap"><em></em> <span>Macroeconomics</span>
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='ap7'>
+															<input type='checkbox' id='ap7' name="checkbox_ap"><em></em> <span>Microeconomics</span>
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='ap8'>
+															<input type='checkbox' id='ap8' name="checkbox_ap"><em></em> <span>Music Theory</span>
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='ap9'>
+															<input type='checkbox' id='ap9' name="checkbox_ap"><em></em> <span>Physics
+																1:Algebra-Based</span>
+														</label>
+													</div>
+												</div>
+											</div>
+											<div class="swiper-slide">
+												<div class="checkbox_area">
+													<div class="checkbox--typeB">
+														<label for='ap5'>
+															<input type='checkbox' id='ap5' name="checkbox_ap"><em></em> <span>Physics
+																2:Algebra-Based</span>
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='ap6'>
+															<input type='checkbox' id='ap6' name="checkbox_ap"><em></em> <span>Physics C:Electricity
+																and Magnetism</span>
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='ap7'>
+															<input type='checkbox' id='ap7' name="checkbox_ap"><em></em> <span>Physics
+																C:Mechanics</span>
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='ap8'>
+															<input type='checkbox' id='ap8' name="checkbox_ap"><em></em> <span>Psychology</span>
+														</label>
+													</div>
+													<div class="checkbox--typeB">
+														<label for='ap9'>
+															<input type='checkbox' id='ap9' name="checkbox_ap"><em></em> <span>Spanish Language and
+																Culture</span>
+														</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="controls">
+											<div class="swiper-button-prev"></div>
+											<div class="swiper-pagination"></div>
+											<div class="swiper-button-next"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- AP수업 제공여부 -->
+							<div class="f_item">
+								<div id="filter_apoffer" class="title">
+									<span>AP수업 제공여부</span>
+									<button type="button" class="btn_open"></button>
+								</div>
+								<div class="cnts">
+									<div class="checkbox_area type1">
+										<div class="checkbox--typeB">
+											<label for='apoffer1'>
+												<input type='checkbox' id='apoffer1' name="checkbox_apoffer"><em></em> 제공안함
+											</label>
+										</div>
+										<div class="checkbox--typeB">
+											<label for='apoffer2'>
+												<input type='checkbox' id='apoffer2' name="checkbox_apoffer"><em></em> 제공
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 학년 -->
+							<div class="f_item">
+								<div id="filter_grade" class="title">
+									<span>학년</span>
+									<button type="button" class="btn_open"></button>
+								</div>
+								<div class="cnts">
+									<div class="checkbox_area half">
+										<div class="checkbox--typeB">
+											<label for='grade'>
+												<input type='checkbox' id='grade' name="checkbox_grade"><em></em> 유치원
+											</label>
+										</div>
+										<div class="checkbox--typeB">
+											<label for='grade1'>
+												<input type='checkbox' id='grade1' name="checkbox_grade"><em></em> 1학년
+											</label>
+										</div>
+										<div class="checkbox--typeB">
+											<label for='grade2'>
+												<input type='checkbox' id='grade2' name="checkbox_grade"><em></em> 2학년
+											</label>
+										</div>
+										<div class="checkbox--typeB">
+											<label for='grade3'>
+												<input type='checkbox' id='grade3' name="checkbox_grade"><em></em> 3학년
+											</label>
+										</div>
+										<div class="checkbox--typeB">
+											<label for='grade4'>
+												<input type='checkbox' id='grade4' name="checkbox_grade"><em></em> 4학년
+											</label>
+										</div>
+										<div class="checkbox--typeB">
+											<label for='grade5'>
+												<input type='checkbox' id='grade5' name="checkbox_grade"><em></em> 5학년
+											</label>
+										</div>
+										<div class="checkbox--typeB">
+											<label for='grade6'>
+												<input type='checkbox' id='grade6' name="checkbox_grade"><em></em> 6학년
+											</label>
+										</div>
+										<div class="checkbox--typeB">
+											<label for='grade7'>
+												<input type='checkbox' id='grade7' name="checkbox_grade"><em></em> 7학년
+											</label>
+										</div>
+										<div class="checkbox--typeB">
+											<label for='grade8'>
+												<input type='checkbox' id='grade8' name="checkbox_grade"><em></em> 8학년
+											</label>
+										</div>
+										<div class="checkbox--typeB">
+											<label for='grade9'>
+												<input type='checkbox' id='grade9' name="checkbox_grade"><em></em> 9학년
+											</label>
+										</div>
+										<div class="checkbox--typeB">
+											<label for='grade10'>
+												<input type='checkbox' id='grade10' name="checkbox_grade"><em></em> 10학년
+											</label>
+										</div>
+										<div class="checkbox--typeB">
+											<label for='grade11'>
+												<input type='checkbox' id='grade11' name="checkbox_grade"><em></em> 11학년
+											</label>
+										</div>
+										<div class="checkbox--typeB">
+											<label for='grade12'>
+												<input type='checkbox' id='grade12' name="checkbox_grade"><em></em> 12학년
+											</label>
+										</div>
+										<div class="checkbox--typeB">
+											<label for='grade13'>
+												<input type='checkbox' id='grade13' name="checkbox_grade"><em></em> 13학년
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 숙소형태 -->
+							<div class="f_item">
+								<div id="filter_lodging" class="title">
+									<span>숙소형태</span>
+									<button type="button" class="btn_open"></button>
+								</div>
+								<div class="cnts">
+									<div class="checkbox_area type1">
+										<div class="checkbox--typeB">
+											<label for='lodging1'>
+												<input type='checkbox' id='lodging1' name="checkbox_lodging"><em></em> 통학
+											</label>
+										</div>
+										<div class="checkbox--typeB">
+											<label for='lodging2'>
+												<input type='checkbox' id='lodging2' name="checkbox_lodging"><em></em> 기숙
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 학비 -->
+							<div class="f_item">
+								<div id="filter_expenses" class="title">
+									<span>
+										학비
+										<button type="button" class="btn_question"></button>
+										<p class="service_cnts">
+											최소비용 기준으로 필터링 되며,환율 변동으로
+											인해 실제 결제 금액과 상이할 수 있습니다.
+										</p>
+									</span>
+									<button type="button" class="btn_open"></button>
+								</div>
+								<div class="cnts">
+									<div id="slider-range" class="custom_range"></div>
+									<div class="input_range">
+										<div class="range_box low">
+											<span>최저<em>KRW</em></span>
+											<input type="number" id="range_low">
+										</div>
+										<span class="dash"></span>
+										<div class="range_box high">
+											<span>최고<em>KRW</em></span>
+											<input type="number" id="range_high">
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 종교 -->
+							<div class="f_item">
+								<div id="filter_religion" class="title">
+									<span>종교</span>
+									<button type="button" class="btn_open"></button>
+								</div>
+								<div class="cnts">
+									<div class="checkbox_area half">
+										<div class="checkbox--typeB">
+											<label for='religion'>
+												<input type='checkbox' id='religion' name="checkbox_religion"><em></em> 기독교
+											</label>
+										</div>
+										<div class="checkbox--typeB">
+											<label for='religion1'>
+												<input type='checkbox' id='religion1' name="checkbox_religion"><em></em> 유대교
+											</label>
+										</div>
+										<div class="checkbox--typeB">
+											<label for='religion2'>
+												<input type='checkbox' id='religion2' name="checkbox_religion"><em></em> 카톨릭
+											</label>
+										</div>
+										<div class="checkbox--typeB">
+											<label for='religion3'>
+												<input type='checkbox' id='religion3' name="checkbox_religion"><em></em> 힌두교
+											</label>
+										</div>
+										<div class="checkbox--typeB">
+											<label for='religion4'>
+												<input type='checkbox' id='religion4' name="checkbox_religion"><em></em> 이슬람
+											</label>
+										</div>
+										<div class="checkbox--typeB">
+											<label for='religion5'>
+												<input type='checkbox' id='religion5' name="checkbox_religion"><em></em> 불교
+											</label>
+										</div>
+										<div class="checkbox--typeB">
+											<label for='religion6'>
+												<input type='checkbox' id='religion6' name="checkbox_religion"><em></em> 무교
+											</label>
+										</div>
+										<div class="checkbox--typeB">
+											<label for='religion7'>
+												<input type='checkbox' id='religion7' name="checkbox_religion"><em></em> 기타
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 국제학생 입학 -->
+							<div class="f_item">
+								<div id="filter_inter" class="title">
+									<span>국제학생 입학
+										<button type="button" class="btn_question"></button>
+										<p class="service_cnts">
+											국제학생 비자발급이 어려운 학교가 있으니
+											지원하기 전에 꼭 문의해 주세요!
+										</p>
+									</span>
+									<button type="button" class="btn_open"></button>
+								</div>
+								<div class="cnts">
+									<div class="checkbox_area type1">
+										<div class="checkbox--typeB">
+											<label for='inter1'>
+												<input type='checkbox' id='inter1' name="checkbox_inter"><em></em> 국제학생 진학가능
+											</label>
+										</div>
+										<div class="checkbox--typeB">
+											<label for='inter2'>
+												<input type='checkbox' id='inter2' name="checkbox_inter"><em></em> 국내학생만 진학가능
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 성별 -->
+							<div class="f_item">
+								<div id="filter_sex" class="title">
+									<span>성별</span>
+									<button type="button" class="btn_open"></button>
+								</div>
+								<div class="cnts">
+									<div class="checkbox_area type1">
+										<div class="checkbox--typeB">
+											<label for='sex'>
+												<input type='checkbox' id='sex' name="checkbox_sex"><em></em> 남학교
+											</label>
+										</div>
+										<div class="checkbox--typeB">
+											<label for='sex2'>
+												<input type='checkbox' id='sex2' name="checkbox_sex"><em></em> 여학교
+											</label>
+										</div>
+										<div class="checkbox--typeB">
+											<label for='sex3'>
+												<input type='checkbox' id='sex3' name="checkbox_sex"><em></em> 공학
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 평균 SAT 점수 -->
+							<div class="f_item">
+								<div id="filter_sat" class="title">
+									<span>평균 SAT 점수</span>
+									<button type="button" class="btn_open"></button>
+								</div>
+								<div class="cnts">
+									<div id="slider-range_sat" class="custom_range"></div>
+									<div class="input_range">
+										<div class="range_box low disabled">
+											<input type="number" id="range_low_sat" readonly>
+										</div>
+										<span class="dash"></span>
+										<div class="range_box high disabled">
+											<input type="number" id="range_high_sat" readonly>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 평균 ACT 점수 -->
+							<div class="f_item">
+								<div id="filter_act" class="title">
+									<span>평균 ACT 점수</span>
+									<button type="button" class="btn_open"></button>
+								</div>
+								<div class="cnts">
+									<div id="slider-range_act" class="custom_range"></div>
+									<div class="input_range ">
+										<div class="range_box low disabled">
+											<input type="number" id="range_low_act" readonly>
+										</div>
+										<span class="dash"></span>
+										<div class="range_box high disabled">
+											<input type="number" id="range_high_act" readonly>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 실시간 수업 -->
+							<div class="f_item">
+								<div id="filter_live" class="title">
+									<span>실시간 수업</span>
+									<button type="button" class="btn_open"></button>
+								</div>
+								<div class="cnts">
+									<div class="checkbox_area type1">
+										<div class="checkbox--typeB">
+											<label for='live1'>
+												<input type='checkbox' id='live1' name="checkbox_live"><em></em> 70% 이상
+											</label>
+										</div>
+										<div class="checkbox--typeB">
+											<label for='live2'>
+												<input type='checkbox' id='live2' name="checkbox_live"><em></em> 70% 이하
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- 지원마감일 -->
+							<div class="f_item">
+								<div id="filter_deadline" class="title">
+									<span>지원마감일</span>
+									<button type="button" class="btn_open"></button>
+								</div>
+								<div class="cnts">
+									<div class="filter_datepicker">
+										<span>날짜선택</span>
+										<div class="picker_list">
+											<div class="custom-datepicker">
+												<input type="text" id="st_dt" name="input_deadline" class="datepicker" placeholder="년-월-일"
+													readonly>
+											</div>
+											<span>~</span>
+											<div class="custom-datepicker">
+												<input type="text" id="end_dt" name="input_deadline" class="datepicker" placeholder="년-월-일"
+													readonly>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="filter__btns">
+							<button type="button" class="btn_reset btn--light">초기화</button>
+							<button type="button" class="btn_confirm btn--primary">적용하기</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<!-- 정렬 선택 모달 시작 -->
+		<div id="modal-select-choose" class="modal modal_select_choose bottom">
+			<div class="modal__inner">
+				<div class="modal__close">
+					<button type="button" class="btn_modal-close" onclick="closeModal('modal-select-choose')"></button>
+				</div>
+				<div class="modal__header">
+					<p>정렬</p>
+				</div>
+				<div class="modal__content">
+					<form action="" class="form_select">
+						<fieldset>
+							<ul class="select_option">
+								<li>
+									<button type="button" onclick="selectOption('modal-select-choose')">추천순</button>
+								</li>
+								<li>
+									<button type="button" onclick="selectOption('modal-select-choose')">조회 많은순</button>
+								</li>
+								<li>
+									<button type="button" onclick="selectOption('modal-select-choose')">학비 높은순</button>
+								</li>
+								<li>
+									<button type="button" onclick="selectOption('modal-select-choose')">학비 낮은순</button>
+								</li>
+								<li>
+									<button type="button" onclick="selectOption('modal-select-choose')">AP수업 많은순</button>
+								</li>
+								<li>
+									<button type="button" onclick="selectOption('modal-select-choose')">최신순</button>
+								</li>
+								<li>
+									<button type="button" onclick="selectOption('modal-select-choose')">오래된순</button>
+								</li>
+								<li>
+									<button type="button" onclick="selectOption('modal-select-choose')">참가비 높은순</button>
+								</li>
+								<li>
+									<button type="button" onclick="selectOption('modal-select-choose')">참가비 낮은순</button>
+								</li>
+							</ul>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- 정렬 선택 모달 끝 -->
+
+		<!-- 나라 선택 모달 시작 -->
+		<div id="modal-select-choose1" class="modal modal_select_choose bottom">
+			<div class="modal__inner">
+				<div class="modal__close">
+					<button type="button" class="btn_modal-close" onclick="closeModal('modal-select-choose1')"></button>
+				</div>
+				<div class="modal__header">
+					<p>나라 선택</p>
+				</div>
+				<div class="modal__content">
+					<form action="" class="form_select">
+						<fieldset>
+							<ul class="select_option">
+								<li>
+									<img src="../img/common/country01.svg" alt="나라 사진">
+									<button type="button" value="us" onclick="selectOption('modal-select-choose1')">United
+										State(미국)<span>+82</span></button>
+								</li>
+								<li>
+									<img src="../img/common/country01.svg" alt="나라 사진">
+									<button type="button" value="sk" onclick="selectOption('modal-select-choose1')">South
+										Korea(대한민국)<span>+82</span></button>
+								</li>
+								<li>
+									<img src="../img/common/country01.svg" alt="나라 사진">
+									<button type="button" value="ch"
+										onclick="selectOption('modal-select-choose1')">China(중국)<span>+82</span></button>
+								</li>
+								<li>
+									<img src="../img/common/country01.svg" alt="나라 사진">
+									<button type="button" value="uk" onclick="selectOption('modal-select-choose1')">United
+										State(미국)<span>+82</span></button>
+								</li>
+								<li>
+									<img src="../img/common/country01.svg" alt="나라 사진">
+									<button type="button" value="us" onclick="selectOption('modal-select-choose1')">United
+										State(미국)<span>+82</span></button>
+								</li>
+								<li>
+									<img src="../img/common/country01.svg" alt="나라 사진">
+									<button type="button" value="sk" onclick="selectOption('modal-select-choose1')">South
+										Korea(대한민국)<span>+82</span></button>
+								</li>
+								<li>
+									<img src="../img/common/country01.svg" alt="나라 사진">
+									<button type="button" value="ch"
+										onclick="selectOption('modal-select-choose1')">China(중국)<span>+82</span></button>
+								</li>
+								<li>
+									<img src="../img/common/country01.svg" alt="나라 사진">
+									<button type="button" value="uk" onclick="selectOption('modal-select-choose1')">United
+										State(미국)<span>+82</span></button>
+								</li>
+								<li>
+									<img src="../img/common/country01.svg" alt="나라 사진">
+									<button type="button" value="us" onclick="selectOption('modal-select-choose1')">United
+										State(미국)<span>+82</span></button>
+								</li>
+								<li>
+									<img src="../img/common/country01.svg" alt="나라 사진">
+									<button type="button" value="sk" onclick="selectOption('modal-select-choose1')">South
+										Korea(대한민국)<span>+82</span></button>
+								</li>
+								<li>
+									<img src="../img/common/country01.svg" alt="나라 사진">
+									<button type="button" value="ch"
+										onclick="selectOption('modal-select-choose1')">China(중국)<span>+82</span></button>
+								</li>
+								<li>
+									<img src="../img/common/country01.svg" alt="나라 사진">
+									<button type="button" value="uk" onclick="selectOption('modal-select-choose1')">United
+										State(미국)<span>+82</span></button>
+								</li>
+							</ul>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- 나라 선택 모달 끝 -->
+
+		<!-- 지역 선택 모달 시작 -->
+		<div id="modal-select-choose2" class="modal modal_select_choose bottom">
+			<div class="modal__inner">
+				<div class="modal__close">
+					<button type="button" class="btn_modal-close" onclick="closeModal('modal-select-choose2')"></button>
+				</div>
+				<div class="modal__header">
+					<p>지역 선택</p>
+				</div>
+				<div class="modal__content">
+					<form action="" class="form_select">
+						<fieldset>
+							<ul class="select_option">
+								<li>
+									<img src="../img/common/country01.svg" alt="나라 사진">
+									<button type="button" value="us" onclick="selectOption('modal-select-choose2')">United
+										State(미국)<span>+82</span></button>
+								</li>
+							</ul>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- 지역 선택 모달 끝 -->
+
+		<script>
+			Scrollbar.initAll();
+			$(function () {
+				// 높이 헤더길이에 따라 달라짐
+				var headerHeight = $('header').outerHeight(true);
+
+				let ww = $(window).width();
+				if (ww > 786) {
+					$('.more-list__inner').css("height", `calc(100vh - ${headerHeight}px)`)
+					Scrollbar.initAll();
+				}
+
+				$(window).on('resize', function () {
+					ww = $(window).width();
+					if (ww > 786) {
+						$('.more-list__inner').css("height", `calc(100vh - ${headerHeight}px)`)
+						Scrollbar.initAll();
+					} else {
+						Scrollbar.destroy();
+					}
+				});
+
+				// 필터 버튼 클릭시 필터 노출
+				$('.btn_filter').click(function () {
+					$('.list_filter').addClass('open')
+					$(this).addClass('active')
+					$('html').css('overflow-y', 'hidden')
+				})
+				// 필터 닫기 버튼 클릭시 필터 숨김
+				$('.filter__header .btn_close').click(function () {
+					$('.list_filter').removeClass('open')
+					$('.btn_filter').removeClass('active')
+					$('html').css('overflow-y', 'auto')
+				})
+
+				// 필터 타이틀 클릭시 해당 콘텐츠 슬라이드
+				$('.f_item .title').click(function () {
+					$('.f_item .title').not($(this)).removeClass('open')
+					$('.f_item .cnts').not($(this).siblings('.cnts')).slideUp()
+					$(this).toggleClass('open')
+					$(this).siblings('.cnts').slideToggle()
+				})
+
+				// 필터 : 분야 선택
+				$('input[name=checkbox_category]').change(function () {
+					var length = $('input[name=checkbox_category]:checked').length;
+					if (length > 0) {
+						$('#filter_category').addClass('active')
+					} else {
+						$('#filter_category').removeClass('active')
+					}
+				})
+
+				// 필터 : 커리큘럼 종류 선택
+				$('input[name=checkbox_curriculum]').change(function () {
+					var length = $('input[name=checkbox_curriculum]:checked').length;
+					if (length > 0) {
+						$('#filter_curriculum').addClass('active')
+					} else {
+						$('#filter_curriculum').removeClass('active')
+					}
+				})
+
+				// 필터 : 제공 AP수업 선택
+				$('input[name=checkbox_ap]').change(function () {
+					var length = $('input[name=checkbox_ap]:checked').length;
+					if (length > 0) {
+						$('#filter_ap').addClass('active')
+					} else {
+						$('#filter_ap').removeClass('active')
+					}
+				})
+
+				// 필터 : AP수업 제공여부 선택
+				$('input[name=checkbox_apoffer]').change(function () {
+					var length = $('input[name=checkbox_apoffer]:checked').length;
+					if (length > 0) {
+						$('#filter_apoffer').addClass('active')
+					} else {
+						$('#filter_apoffer').removeClass('active')
+					}
+				})
+
+				// 필터 : 학년 선택
+				$('input[name=checkbox_grade]').change(function () {
+					var length = $('input[name=checkbox_grade]:checked').length;
+					if (length > 0) {
+						$('#filter_grade').addClass('active')
+					} else {
+						$('#filter_grade').removeClass('active')
+					}
+				})
+
+				// 필터 : 기숙형태 선택
+				$('input[name=checkbox_lodging]').change(function () {
+					var length = $('input[name=checkbox_lodging]:checked').length;
+					if (length > 0) {
+						$('#filter_lodging').addClass('active')
+					} else {
+						$('#filter_lodging').removeClass('active')
+					}
+				})
+
+				// 필터 : 종교 선택
+				$('input[name=checkbox_religion]').change(function () {
+					var length = $('input[name=checkbox_religion]:checked').length;
+					if (length > 0) {
+						$('#filter_religion').addClass('active')
+					} else {
+						$('#filter_religion').removeClass('active')
+					}
+				})
+
+				// 필터 : 국제학생 입학 선택
+				$('input[name=checkbox_inter]').change(function () {
+					var length = $('input[name=checkbox_inter]:checked').length;
+					if (length > 0) {
+						$('#filter_inter').addClass('active')
+					} else {
+						$('#filter_inter').removeClass('active')
+					}
+				})
+
+				// 필터 : 성별 선택
+				$('input[name=checkbox_sex]').change(function () {
+					var length = $('input[name=checkbox_sex]:checked').length;
+					if (length > 0) {
+						$('#filter_sex').addClass('active')
+					} else {
+						$('#filter_sex').removeClass('active')
+					}
+				})
+
+				// 필터 : 실시간수업 선택
+				$('input[name=checkbox_live]').change(function () {
+					var length = $('input[name=checkbox_live]:checked').length;
+					if (length > 0) {
+						$('#filter_live').addClass('active')
+					} else {
+						$('#filter_live').removeClass('active')
+					}
+				})
+
+				// 필터 : 마감일자 선택
+				$('input[name=input_deadline]').change(function () {
+					let start = $('#st_dt').val()
+					let end = $('#end_dt').val()
+
+					if (start || end) {
+						$('#filter_deadline').addClass('active')
+					} else {
+						$('#filter_deadline').removeClass('active')
+					}
+				})
+
+				// 학비 Range Slider
+				var rangeSlider = $("#slider-range").slider({
+					range: true,
+					min: 0,
+					max: 3000000,
+					values: [0, 3000000],
+					slide: function (event, ui) {
+						$("#range_low").val(ui.values[0]);
+						$("#range_high").val(ui.values[1]);
+						if (ui.values[0] != 0 && ui.values[0] > 0) {
+							$('#filter_expenses').addClass('active')
+							return;
+						} else {
+							$('#filter_expenses').removeClass('active')
+						}
+
+						if (ui.values[1] != 3000000 && ui.values[1] < 3000000) {
+							$('#filter_expenses').addClass('active')
+							return;
+						} else {
+							$('#filter_expenses').removeClass('active')
+							return;
+						}
+					}
+				});
+
+				$("#range_low").val($("#slider-range").slider("values", 0));
+				$("#range_high").val($("#slider-range").slider("values", 1));
+
+				$("#range_low").change(function (e) {
+					rangeSlider.slider('values', 0, e.target.value);
+					if ($('#range_low').val() != 0) {
+						$('#filter_expenses').addClass('active')
+					} else {
+						$('#filter_expenses').removeClass('active')
+					}
+				})
+				$("#range_high").change(function (e) {
+					rangeSlider.slider('values', 1, e.target.value);
+					if ($('#range_high').val() != 3000000) {
+						$('#filter_expenses').addClass('active')
+					} else {
+						$('#filter_expenses').removeClass('active')
+					}
+				})
+
+				// SAT Range Slider
+				var rangeSliderSAT = $("#slider-range_sat").slider({
+					range: true,
+					min: 400,
+					max: 1600,
+					values: [400, 1600],
+					slide: function (event, ui) {
+						$("#range_low_sat").val(ui.values[0]);
+						$("#range_high_sat").val(ui.values[1]);
+						if (ui.values[0] != 400 && ui.values[0] > 400) {
+							$('#filter_sat').addClass('active')
+							return;
+						} else {
+							$('#filter_sat').removeClass('active')
+						}
+
+						if (ui.values[1] != 1600 && ui.values[1] < 1600) {
+							$('#filter_sat').addClass('active')
+							return;
+						} else {
+							$('#filter_sat').removeClass('active')
+							return;
+						}
+					}
+				});
+
+				$("#range_low_sat").val($("#slider-range_sat").slider("values", 0));
+				$("#range_high_sat").val($("#slider-range_sat").slider("values", 1));
+
+				// ACT Range Slider
+				var rangeSliderACT = $("#slider-range_act").slider({
+					range: true,
+					min: 1,
+					max: 36,
+					values: [1, 36],
+					slide: function (event, ui) {
+						$("#range_low_act").val(ui.values[0]);
+						$("#range_high_act").val(ui.values[1]);
+						if (ui.values[0] != 1 && ui.values[0] > 1) {
+							$('#filter_act').addClass('active')
+							return;
+						} else {
+							$('#filter_act').removeClass('active')
+						}
+
+						if (ui.values[1] != 36 && ui.values[1] < 36) {
+							$('#filter_act').addClass('active')
+							return;
+						} else {
+							$('#filter_act').removeClass('active')
+							return;
+						}
+					}
+				});
+
+				$("#range_low_act").val($("#slider-range_act").slider("values", 0));
+				$("#range_high_act").val($("#slider-range_act").slider("values", 1));
+			})
+
+
+			// 필터 : 국가 선택
+			function selectCountry(event) {
+				let val = event.value;
+				if (val != '') {
+					$('#area').attr('disabled', false)
+					$(".custom-select").niceSelect('update');
+				} else {
+					$('#area').attr('disabled', true)
+					$('#area').val('')
+					$(".custom-select").niceSelect('update');
+					// 국가 리셋시, 필터 active 제거
+					$('#filter_country').removeClass('active')
+				}
+			}
+
+			// 필터 : 지역 선택
+			function selectArea() {
+				let val = event.value;
+				if (val != '') {
+					$('#filter_country').addClass('active')
+				}
+			}
+
+			var categorySwiper = new Swiper(".filter_swiper", {
+				spaceBetween: 30,
+				centeredSlides: true,
+				autoplay: {
+					delay: 2500,
+					disableOnInteraction: false,
+				},
+				pagination: {
+					el: '.swiper-pagination',
+					type: 'custom',
+					renderCustom: function (swiper, current, total) {
+						return '<span class="current">' + current + '</span>' + '/' + total;
+					}
+				},
+				navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+				},
+			});
+
+			function clickMobileSelect(id) {
+				var ww = $(window).width();
+				if (ww > 768) {
+					return;
+				} else {
+					openModal(id)
+				}
+			}
+
+			function selectOption(id) {
+				closeModal(id)
+			}
+		</script>
+
+		<script type="text/javascript">
+			jQuery(function () {
+				PB.toggle_item_fav = function (fav_type_, fav_id_, toggle_, callback_) {
+					callback_ = callback_ ? callback_ : $.noop;
+
+					PB.post("toggle-item-fav", {
+						fav_type: fav_type_,
+						fav_id: fav_id_,
+						toggle_yn: !!toggle_ ? "Y" : "N",
+					}, $.proxy(function (bool_, response_json_) {
+						if (!bool_ || response_json_.success !== true) {
+							PB.alert(response_json_.error_title || __("에러발생", PBVAR['theme_domain']), response_json_.error_message || __("통신 중, 에러가 발생했습니다.", PBVAR['theme_domain']), __("확인", PBVAR['theme_domain']));
+							this.apply(window, [false]);
+							return;
+						}
+
+						this.apply(window, [true]);
+
+						$("[data-item-fav-total-count='" + response_json_.fav_type + "']").text(PB.make_currency(response_json_.total_count));
+
+						$(document).trigger("item.fav.toggled", [response_json_.fav_type, response_json_.fav_id, response_json_.total_count]);
+
+					}, callback_));
+				}
+
+				$(document).on("click", "[data-item-fav-btn]", function (event_) {
+					var target_item_ = $(event_.target);
+					var args_ = target_item_.attr("data-item-fav-btn");
+					args_ = args_.split(",");
+
+					if (!PBVAR['is_user_logged_in']) {
+						document.location = PBVAR["user_login_url"];
+					} else {
+
+						var before_actived_ = target_item_.hasClass("actived");
+
+						PB.toggle_item_fav(args_[0], args_[1], !before_actived_, $.proxy(function (result_) {
+							if (!result_) return;
+							this.toggleClass("actived");
+						}, target_item_));
+					}
+
+					return false;
+				});
+			});
+		</script>
+
+		<script type="text/javascript">
+			jQuery(function () {
+
+				$("[data-media-post-id]").click(function () {
+
+					PB.post("post-load-media-popup", {
+						post_id: $(this).attr("data-media-post-id"),
+					}, function (result_, response_json_) {
+						if (!result_ || response_json_.success !== true) {
+							PB.alert(response_json_.error_title || "에러발생", response_json_.error_message || "미디어를 불러오는 중, 에러가 발생했습니다.");
+							return;
+						}
+
+						$("#pb-post-media-view-modal").remove();
+						$(response_json_.popup_html).appendTo("body");
+
+						var post_media_view_modal_ = $("#pb-post-media-view-modal");
+						post_media_view_modal_.on("hidden.bs.modal", function () {
+							$("#pb-post-media-view-modal").remove();
+						});
+						post_media_view_modal_.modal("show");
+
+					}, true);
+
+					return false;
+				});
+			});
+		</script>
+
+		<div class="settlen-fail-popup information-popup" style="display:none;">
+			<div class="box information-box-popup">
+				<div class="img"><img class="settlen-img" src="/html/images/icon_error.png" alt=""></div>
+				<div class="txt1 settlen-title">결제에 실패했습니다</div>
+				<div class="txt2 settlen-body">[결제포기] 사용자가 결제를 취소하였습니다.</div>
+				<div class="btnA"><a href="#"><span class="settlen-footer">결제 화면으로</span></a></div>
+			</div>
+		</div>
+
+		<!-- support-view-popup -->
+		<div class="sub-list-popup confirm-popup" style="display:none;">
+			<div class="box confirm-box-popup">
+				<div class="txt1 settlen-title">주의!</div>
+				<div class="txt2 settlen-body">정말 페이지를 나가시겠습니까?<br>작성하신 내용은 저장되지 않습니다.</div>
+				<div class="btnA">
+					<a href="#" class="cancel" onclick="javascript:ationClose();">취소</a>
+					<a href="#" class="f-red BTN-ATION-CONFIRM-OK">확인</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="sub-list-popup delete-popup" style="display:none;">
+			<div class="box delete-box-popup">
+				<div class="txt1 settlen-title">결제내역 삭제</div>
+				<div class="txt2 settlen-body">결제내역을 삭제하시겠습니까? <br>삭제 후에는 복구할 수 없습니다.</div>
+				<div class="btnA">
+					<a href="#" class="cancel" onclick="javascript:ationClose();">취소</a>
+					<a href="#" class="f-red BTN-ATION-DELETE-OK">삭제</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="fm-NSCK">
+
+			<div class="sns-pop consulting-popup" style="display:none;">
+				<div class="box">
+					<div class="close">
+						<a href="#"><img src="/html/images/quick_close.png" alt=""></a>
+					</div>
+					<div class="title">상담 수단 선택</div>
+					<div class="cont">
+						<ul>
+							<li>
+								<!--<a href="javascript:phoneConsultation();">-->
+								<a href="https://whattime.co.kr/connect_ed" target="_blank">
+									<img src="/html/images/inquiry_call.png" alt="">
+									<div class="txt">
+										<p>전화상담 예약</p>
+										<p>예약하신 시간에 전화드려요!</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a id="chat-channel-button" href="javascript:kakaoChannel();">
+									<img src="/html/images/inquiry_kakao.png" alt="">
+									<div class="txt">
+										<p>카카오 상담</p>
+										<p>실시간 답장이 가능합니다!</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="javascript:Channeltalk();">
+									<img src="/html/images/inquiry_hello.png" alt="">
+									<div class="txt">
+										<p>Hello :)</p>
+										<p>Can we help?</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="sns-appointment-pop" style="display:none;">
+				<div class="box">
+					<div class="txt1">
+						<span>조기유학</span>
+						전화상담 예약이 완료되었습니다.
+					</div>
+					<div class="txt2">예약된 시간에 전문 카운슬러가 전화 드리겠습니다 :)</div>
+					<div class="cont">
+						<p>2023. 01. 27 금요일',PB_THEME_DOMAIN)?></p>
+						<p>오전 10시 30분(UTC+9)</p>
+					</div>
+					<ul>
+						<li>
+							<span>예약자명</span>
+							<strong>홍길동</strong>
+						</li>
+						<li>
+							<span>문의국가</span>
+							<strong>미국</strong>
+						</li>
+						<li>
+							<span>문의내용</span>
+							<strong>문의내용은 고객이 입력한 만큼 노출되기 때문에 길어질 수 있습니다. 이후에는 문의내용은 고객이 입력한 만큼 노출되기 때문에 길어질 수 있습니다.이후에는 문의내용은 고객이 입력한
+								만큼 노출되기 때문에 길어질 수 있습니다.이후에는 문의내용은 고객이 입력한 만큼 노출되기 때문에 길어질 수 있습니다.</strong>
+						</li>
+					</ul>
+					<div class="btnA">
+						<a href="#">확인</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<script>
+			$('.quick-sns-close').on('click', function (e) {
+				console.log('ioioio');
+				//ChannelIO('hideMessenger');
+				//$('.quick-sns').hide();
+			});
+			(function (d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = 'https://t1.kakaocdn.net/kakao_js_sdk/2.1.0/kakao.channel.min.js';
+				js.integrity = 'sha384-MEvxc+j9wOPB2TZ85/N6G3bt3K1/CgHSGNSM+88GoytFuzP4C9szmANjTCNfgKep';
+				js.crossOrigin = 'anonymous';
+				fjs.parentNode.insertBefore(js, fjs);
+			})(document, 'script', 'kakao-js-sdk');
+			function kakaoChannel() {
+				Kakao.Channel.chat({
+					channelPublicId: '_ximsdj',
+				});
+			}
+			function Channeltalk() {
+				$('.quick-sns, .sns-appointment-pop, .box').hide();
+				// https://developers.channel.io/reference/web-channelio-kr
+				ChannelIO('boot', { "pluginKey": "378cf6f4-3169-4a37-a85e-2e8b36cdab6a" });
+				ChannelIO('showMessenger');
+				ChannelIO('onHideMessenger', function onHideMessenger() {
+					//ChannelIO('hideMessenger');
+					ChannelIO('shutdown');
+
+					$('.quick-sns').removeClass("on");
+					$('.quick-sns').show();
+				});
+			}
+			function phoneConsultation() {
+				$('.sns-appointment-pop, .box').show();
+			}
+			function consultingChannel() {
+				$('.consulting-popup, .box').show();
+			}
+			function callingChannel() {
+				$('.consulting-popup, .box').show();
+			}
+		</script>
+
+		<script type="text/javascript">
+			// ationClose
+			function ationClose() {
+				$(".confirm-popup, .confirm-box-popup, .delete-popup, .delete-box-popup").hide();
+			}
+
+			// ationAlert
+			function ationAlert(requestData) {
+				let alertModal = $('.information-popup');
+				let alertsubModal = $('.information-box-popup');
+				if (requestData !== undefined && requestData !== null) {
+
+					if (requestData.img === 'error') {
+						alertModal.find('.settlen-img').attr("src", "/html/images/icon_error.png");
+					} else {
+						alertModal.find('.settlen-img').attr("src", "/html/images/icon_success.png");
+					}
+
+					alertModal.find('.settlen-title').html(requestData.title);
+					alertModal.find('.settlen-body').html(requestData.body);
+					alertModal.find('.settlen-footer').html(requestData.footer);
+
+					alertModal.show();
+					alertsubModal.show();
+				}
+			}
+
+			// ationConfirm
+			function ationConfirm(requestData) {
+				let confirmModal = $('.confirm-popup');
+				let confirmsubModal = $('.confirm-box-popup');
+				let buttonConfirm = confirmModal.find('.BTN-ATION-CONFIRM-OK');
+
+				if (requestData !== undefined && requestData !== null) {
+					confirmModal.find('.settlen-title').html(requestData.title);
+					confirmModal.find('.settlen-body').html(requestData.body);
+
+					buttonConfirm.off('click');
+					if (requestData.callback !== undefined && requestData.callback !== null) {
+						buttonConfirm.click(requestData.callback);
+					}
+
+					confirmModal.show();
+					confirmsubModal.show();
+				}
+			}
+
+			// ationDelete
+			function ationDelete(requestData) {
+				let confirmModal = $('.delete-popup');
+				let confirmsubModal = $('.delete-box-popup');
+				let buttonDelete = confirmModal.find('.BTN-ATION-DELETE-OK');
+
+				if (requestData !== undefined && requestData !== null) {
+					confirmModal.find('.settlen-title').html(requestData.title);
+					confirmModal.find('.settlen-body').html(requestData.body);
+
+					buttonDelete.off('click');
+					if (requestData.callback !== undefined && requestData.callback !== null) {
+						buttonDelete.click(requestData.callback);
+					}
+
+					confirmModal.show();
+					confirmsubModal.show();
+				}
+			}
+		</script>
+
+		<script type="text/javascript">
+			/*
+			window.onload = function() {
+				let deviceChk = "PC";
+				if ( deviceChk === 'MO' ) {
+					//let elfeed = $("[class*='feedback']");
+					//elfeed.each(function(index, item) {
+					//});
+			
+					let elfg = document.querySelector('.grecaptcha-badge');
+					elfg.style.display = 'none';
+			
+					//let elfe = document.querySelector('._hj_feedback_container');
+					//elfe.style.display = 'none';
+				}
+			}
+			*/
+		</script>
+	</div>
+</body>
+
+</html>
